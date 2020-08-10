@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import Drawer from '@material-ui/core/Drawer';
-import Button from '@material-ui/core/Button';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
+import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
+import AssignmentIcon from '@material-ui/icons/Assignment';
+import DvrIcon from '@material-ui/icons/Dvr';
 import './Navbar.css'
 
 
@@ -24,15 +24,18 @@ function Navbar() {
 
     const list = () => (
         <div
-            style={{ width: '300px' }}
+            style={{ width: '80vmin' }}
             onClick={toggleDrawer('menu', false)}
             onKeyDown={toggleDrawer('menu', false)}
         >
             <List>
-                {['Projects', 'Resume', 'Profile'].map((text) => (
-                    <ListItem button key={text}>
-                        <ListItemIcon><MailIcon /></ListItemIcon>
-                        <ListItemText primary={text} />
+                {['Projects', 'Resume', 'Profile'].map((text, idx) => (
+                    <ListItem button key={text} className='menu-items'>
+                        {idx === 0 ? <DvrIcon/>  : ''} 
+                        {idx === 1 ? <AssignmentIcon/>  : ''} 
+                        {idx === 2 ? <AssignmentIndIcon/>  : ''} 
+                        <ListItemIcon className='menu-item'></ListItemIcon>
+                        <ListItemText primary={text} className='menu-item'/>
                     </ListItem>
                 ))}
             </List>
@@ -42,15 +45,12 @@ function Navbar() {
     return (
         <div>
             <div id='menuToggle' onClick={toggleDrawer(true)}
-                className={`menu-btn ${state['menu'] ? 'open' : ''} `}
-            >
-            <div
-                className={`menu-btn_burger ${state['menu'] ? 'open' : ''} `}
-            >
+                className={`menu-btn ${state['menu'] ? 'open' : ''} `}>
+                <div
+                    className={`menu-btn_burger ${state['menu'] ? 'open' : ''} `}>
+                </div>
             </div>
-            </div>
-
-            <Drawer anchor={'menu'} open={state['menu']} onClose={toggleDrawer(false)}>
+            <Drawer anchor={'menu'} open={state['menu']} onClose={toggleDrawer(false)} className='drawer'>
                 {list('menu')}
             </Drawer>
         </div>

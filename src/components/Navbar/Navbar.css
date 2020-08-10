@@ -13,6 +13,7 @@
     height: 80px;
     cursor: pointer;
     transition: all .5s ease-in-out;
+    z-index: 1;
 }
 
 .menu-btn_burger {
@@ -48,8 +49,27 @@
 
 .open .menu-btn_burger::before {
     transform: rotate(45deg) translate(35px, -35px);
+    /* background: black; */
 }
 
 .open .menu-btn_burger::after {
     transform: rotate(-45deg) translate(35px, 35px);
+    /* background: black; */
+}
+
+.menu-items {
+    height: 120px;
+}
+
+.menu-items:hover {
+    background: blue;
+    color: blue;
+}
+
+div.MuiDrawer-paper {
+    background-color: lightblue;
+}
+
+span.MuiTypography-displayBlock, svg.MuiSvgIcon-root{
+    font-size: 6vmin;
 }
