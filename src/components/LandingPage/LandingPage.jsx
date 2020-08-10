@@ -3,6 +3,7 @@ import TweenOne from 'rc-tween-one';
 import SvgMorphPlugin from 'rc-tween-one/lib/plugin/SvgMorphPlugin';
 import useToggle from '../../hooks/useToggle'
 import Navbar from '../Navbar/Navbar'
+import './LandingPage.css'
 
 TweenOne.plugins.push(SvgMorphPlugin);
 
@@ -24,11 +25,11 @@ function LandingPage() {
     }, [])
 
     return (
-        <>
+        <div className='landing-page'>
             {isLoaded ?
                 <>
                 <Navbar />
-                <h1>Landing Page</h1>
+                <h1 className='flex-container'>Landing Page</h1>
                 </>
                 :
                 <div style={{ textAlign: 'center', marginTop: 40 }}>
@@ -45,7 +46,7 @@ function LandingPage() {
                     </svg>
                 </div>
             }
-        </>
+        </div>
     )
 }
 

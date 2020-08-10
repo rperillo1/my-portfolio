@@ -7,6 +7,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
+import './Navbar.css'
 
 
 function Navbar() {
@@ -23,7 +24,7 @@ function Navbar() {
 
     const list = () => (
         <div
-            style={{width: '300px'}}
+            style={{ width: '300px' }}
             onClick={toggleDrawer('menu', false)}
             onKeyDown={toggleDrawer('menu', false)}
         >
@@ -40,12 +41,15 @@ function Navbar() {
 
     return (
         <div>
-                <React.Fragment>
-                    <Button onClick={toggleDrawer(true)}>Menu</Button>
-                    <Drawer anchor={'top'} open={state['menu']} onClose={toggleDrawer(false)}>
-                        {list('menu')}
-                    </Drawer>
-                </React.Fragment>
+            <div id='menuToggle' onClick={toggleDrawer(true)} className={`menu-btn 
+         ${state['menu'] ? 'open' : ''  } ` }
+        >
+                <div class="menu-btn_burger"></div>
+            </div>
+
+            <Drawer anchor={'menu'} open={state['menu']} onClose={toggleDrawer(false)}>
+                {list('menu')}
+            </Drawer>
         </div>
     );
 }
