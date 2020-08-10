@@ -41,10 +41,13 @@ function Navbar() {
 
     return (
         <div>
-            <div id='menuToggle' onClick={toggleDrawer(true)} className={`menu-btn 
-         ${state['menu'] ? 'open' : ''  } ` }
-        >
-                <div class="menu-btn_burger"></div>
+            <div id='menuToggle' onClick={toggleDrawer(true)}
+                className={`menu-btn ${state['menu'] ? 'open' : ''} `}
+            >
+            <div
+                className={`menu-btn_burger ${state['menu'] ? 'open' : ''} `}
+            >
+            </div>
             </div>
 
             <Drawer anchor={'menu'} open={state['menu']} onClose={toggleDrawer(false)}>

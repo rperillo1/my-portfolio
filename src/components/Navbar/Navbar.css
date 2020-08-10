@@ -13,7 +13,6 @@
     height: 80px;
     cursor: pointer;
     transition: all .5s ease-in-out;
-    border: 3px solid white;
 }
 
 .menu-btn_burger {
@@ -42,8 +41,15 @@
     transform: translateY(16px)
 }
 
-.open {
+.open .menu-btn_burger{
     transform: translateX(-50px);
     background: transparent;
-    /* background-color: orange; */
+}
+
+.open .menu-btn_burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+}
+
+.open .menu-btn_burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
 }
