@@ -70,6 +70,12 @@ div.MuiDrawer-paper {
     background-color: lightblue;
 }
 
-span.MuiTypography-displayBlock, svg.MuiSvgIcon-root{
+span.MuiTypography-displayBlock, svg.MuiSvgIcon-root, .menu-item{
     font-size: 6vmin;
 }
+
+/* 
+.menu-links {
+    display: flex;
+    justify-content: space-between;
+} */

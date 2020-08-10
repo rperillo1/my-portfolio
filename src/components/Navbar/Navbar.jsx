@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
@@ -30,13 +31,14 @@ function Navbar() {
         >
             <List>
                 {['Projects', 'Resume', 'Profile'].map((text, idx) => (
-                    <ListItem button key={text} className='menu-items'>
-                        {idx === 0 ? <DvrIcon/>  : ''} 
-                        {idx === 1 ? <AssignmentIcon/>  : ''} 
-                        {idx === 2 ? <AssignmentIndIcon/>  : ''} 
-                        <ListItemIcon className='menu-item'></ListItemIcon>
-                        <ListItemText primary={text} className='menu-item'/>
-                    </ListItem>
+                    <Link exact to={`/${text}`} className='menu-links'>
+                        <ListItem button key={text} className='menu-items'>
+                            {idx === 0 ? <DvrIcon /> : ''}
+                            {idx === 1 ? <AssignmentIcon /> : ''}
+                            {idx === 2 ? <AssignmentIndIcon /> : ''}
+                            <ListItemText primary={text} className='menu-item' />
+                        </ListItem>
+                    </Link>
                 ))}
             </List>
         </div>
