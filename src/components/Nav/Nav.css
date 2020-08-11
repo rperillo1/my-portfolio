@@ -1,6 +1,7 @@
 .landing-page {
     display: flex;
-    border: 1px solid white;
+    background-color: var(--nav-color);
     justify-content: center;
     align-items: center;
+    color: var(--text-color-1);
 }
