@@ -8,26 +8,18 @@ import ListItemText from '@material-ui/core/ListItemText';
 import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
 import AssignmentIcon from '@material-ui/icons/Assignment';
 import DvrIcon from '@material-ui/icons/Dvr';
+import useToggle from '../../hooks/useToggle'
 import './Navbar.css'
 
 
 function Navbar() {
-    const [state, setState] = useState({
-        menu: false,
-    });
-
-    const toggleDrawer = (open) => (event) => {
-        if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
-            return;
-        }
-        setState({ ...state, menu: open });
-    };
+    const [drawer, toggleDrawer] = useToggle(false)
 
     const list = () => (
         <div
             style={{ width: '80vmin' }}
-            onClick={toggleDrawer('menu', false)}
-            onKeyDown={toggleDrawer('menu', false)}
+            onClick={() => toggleDrawer(false)}
+            onKeyDown={() => toggleDrawer(false)}
         >
             <List>
                 {['Projects', 'Resume', 'Profile'].map((text, idx) => (
@@ -46,17 +38,66 @@ function Navbar() {
 
     return (
         <div>
-            <div id='menuToggle' onClick={toggleDrawer(true)}
-                className={`menu-btn ${state['menu'] ? 'open' : ''} `}>
+            <div id='menuToggle' onClick={() => toggleDrawer(true)}
+                className={`menu-btn ${drawer ? 'open' : ''} `}>
                 <div
-                    className={`menu-btn_burger ${state['menu'] ? 'open' : ''} `}>
+                    className={`menu-btn_burger ${drawer ? 'open' : ''} `}>
                 </div>
             </div>
-            <Drawer anchor={'menu'} open={state['menu']} onClose={toggleDrawer(false)} className='drawer'>
+            <Drawer anchor={'menu'} open={drawer} onClose={() => toggleDrawer(false)} className='drawer'>
                 {list('menu')}
             </Drawer>
         </div>
     );
 }
+
+// function Navbar() {
+//     const [isDrawerOpen, setIsDrawerOpen] = useToggle(false)
+//     const [state, setState] = useState({
+//         menu: false,
+//     });
+
+//     const toggleDrawer = (open) => (event) => {
+//         // if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+//         //     return;
+//         // }
+//         setState({ ...state, menu: open });
+//     };
+
+//     const list = () => (
+//         <div
+//             style={{ width: '80vmin' }}
+//             onClick={toggleDrawer('menu', false)}
+//             onKeyDown={toggleDrawer('menu', false)}
+//         >
+//             <List>
+//                 {['Projects', 'Resume', 'Profile'].map((text, idx) => (
+//                     <Link exact to={`/${text}`} className='menu-links'>
+//                         <ListItem button key={text} className='menu-items'>
+//                             {idx === 0 ? <DvrIcon /> : ''}
+//                             {idx === 1 ? <AssignmentIcon /> : ''}
+//                             {idx === 2 ? <AssignmentIndIcon /> : ''}
+//                             <ListItemText primary={text} className='menu-item' />
+//                         </ListItem>
+//                     </Link>
+//                 ))}
+//             </List>
+//         </div>
+//     );
+
+//     return (
+//         <div>
+//             <div id='menuToggle' onClick={toggleDrawer(true)}
+//                 className={`menu-btn ${state['menu'] ? 'open' : ''} `}>
+//                 <div
+//                     className={`menu-btn_burger ${state['menu'] ? 'open' : ''} `}>
+//                 </div>
+//             </div>
+//             <Drawer anchor={'menu'} open={state['menu']} onClose={toggleDrawer(false)} className='drawer'>
+//                 {list('menu')}
+//             </Drawer>
+//         </div>
+//     );
+// }
 
 export default Navbar;
