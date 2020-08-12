@@ -36,23 +36,6 @@ function Profile() {
     return (
         <main id='profile-main'>
             <ProfileCard />
-            {/* <div className='flex-container'>
-                <div className={classes.root}>
-                    <div className={classes.wrapper}>
-                        <FormControlLabel
-                            control={<Switch checked={checked} onChange={handleChange} />}
-                            label="Show Letter of Recommendation"
-                        />
-                    </div>
-                </div>
-            </div>
-            <div className='flex-container'>
-                <Slide direction="up" in={checked} mountOnEnter unmountOnExit>
-                    <Paper elevation={4} className={classes.paper}>
-                        <img className='letter-img' src="https://i.imgur.com/H3cMhhj.png" alt="recommendation-letter" />
-                    </Paper>
-                </Slide>
-            </div> */}
             <SpotifyCard />
         </main>
     )

@@ -1,0 +1,15 @@
+#resume-obj {
+    width: 50vw;
+    height: 100vh;
+}
+
+.letter-container {
+    height: 30px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.letter-img {
+    max-width: 65vw;
+}
