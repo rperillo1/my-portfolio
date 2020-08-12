@@ -1,0 +1,21 @@
+.profile-img {
+    height: 200px;
+    border-radius: 7px;
+    padding: 6px;
+}
+
+.profile-text {
+    padding: 10px;
+}
+
+#snowboard-img {
+    border-radius: 20px;
+}
+
+#top {
+    background-color: var(--nav-color);
+}
+
+#middle {
+    background-color: var(--nav-color-1);
+}

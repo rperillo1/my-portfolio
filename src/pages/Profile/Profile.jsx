@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { makeStyles } from '@material-ui/core/styles';
 import Switch from '@material-ui/core/Switch';
 import Paper from '@material-ui/core/Paper';
 import Slide from '@material-ui/core/Slide';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
-import { makeStyles } from '@material-ui/core/styles';
 import ProfileCard from '../../components/ProfileCard/ProfileCard'
+import SpotifyCard from '../../components/SpotifyCard/SpotifyCard'
 import './Profile.css'
 
 
@@ -22,9 +23,11 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
+
+
 function Profile() {
     const classes = useStyles();
-    const [checked, setChecked] = React.useState(false);
+    const [checked, setChecked] = useState(false);
 
     const handleChange = () => {
         setChecked((prev) => !prev);
@@ -32,9 +35,8 @@ function Profile() {
 
     return (
         <main id='profile-main'>
-            <h1 className="flex-container name-header">About Robert</h1>
             <ProfileCard />
-            <div className='flex-container'>
+            {/* <div className='flex-container'>
                 <div className={classes.root}>
                     <div className={classes.wrapper}>
                         <FormControlLabel
@@ -50,7 +52,8 @@ function Profile() {
                         <img className='letter-img' src="https://i.imgur.com/H3cMhhj.png" alt="recommendation-letter" />
                     </Paper>
                 </Slide>
-            </div>
+            </div> */}
+            <SpotifyCard />
         </main>
     )
 }

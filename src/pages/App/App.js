@@ -42,7 +42,6 @@ function App() {
               <Route exact path='/profile' render={({ history }) =>
                 <Profile history={history} />
               } />
-
             </Switch>
           </main>
         </>

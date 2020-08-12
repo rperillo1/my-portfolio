@@ -1,13 +1,11 @@
-#profile-main {
-    /* background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.05), var(--text-color-3)), url(https://i.imgur.com/V1F1cVy.jpg); */
-    /* background-size: cover;
-    height: 100vh; */
-}
-
-.name-header {
-    margin: 0;
-}
-
 .letter-img {
     max-width: 70vw;
+}
+
+#spotify {
+    background-color: var(--nav-color);
+}
+
+iframe.SpotifyPlayer {
+    border-radius: 20px;
 }

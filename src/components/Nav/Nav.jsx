@@ -7,8 +7,7 @@ function Nav() {
 
     return (
         <div className='landing-page'>
-                <Navbar />
-                <h1 className='flex-container'>NavBar</h1>
+            <Navbar />
         </div>
     )
 }

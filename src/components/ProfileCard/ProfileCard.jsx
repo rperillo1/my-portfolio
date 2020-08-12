@@ -1,50 +1,59 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
+import Paper from '@material-ui/core/Paper';
 import './ProfileCard.css'
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 450,
+    maxWidth: 400,
+    borderRadius: 8
   },
-  media: {
-    height: 300,
+  img: {
+    width: 920,
+    borderRadius: 20,
+    height: 400,
   },
 });
+
 
 export default function ProfileCard() {
   const classes = useStyles();
 
   return (
-      <div className='flex-container'>
-    <Card className={classes.root}>
-      <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image="https://i.imgur.com/Ptk7n58.png"
-          title="Contemplative Reptile"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            Robert Perillo
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-          Salesman/Audio Engineer turned Software Developer. Whether technical or client facing, I have experience stepping through varying challenges. I have exceeded my quarterly sales goals in both prior sales roles while maintaining multiple other technical operations. I thrive on constructive criticism and believe there is always more to learn, regardless of the subject. I work well in team environments and respect the time that people give to me to further my knowledge base. I offer a unique perspective and creative problem solving skills to help reach the desired team and/or individual objective.
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-          Learn More
-        </Button>
-      </CardActions>
-    </Card>
-    </div>
+    <>
+      <section id='top'>
+        <h1 className="flex-container">Full Stack Developer | Audio Engineer | Outdoor Enthusiast</h1>
+        <div className='flex-container'>
+          <Paper elevation={3} className={`${classes.img} flex-container`}>
+            <img src="https://i.imgur.com/PYQb76j.png" alt="Robert snowboarding at Winter Park" id='snowboard-img' />
+          </Paper>
+        </div>
+      </section >
+      <section id='middle'>
+        <div className='flex-container'>
+          <Paper elevation={3} className={classes.root}>
+            <img src="https://i.imgur.com/Ptk7n58.png" alt="" className='profile-img' />
+          </Paper>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+        <div className='flex-container'>
+          <Paper elevation={3} className={`${classes.root} profile-text`}>
+            <div>
+              Audio Engineer turned Software Developer.
+              Through project experiences using JavaScript, Node, Express, React, RESTful APIs, HTML and CSS, I have developed a zeal for building efficient web applications.
+              I thrive on constructive criticism and value empathy, accountability and transparency in a workplace.
+              I work well in team environments and respect the time that people give to me to further my knowledge base.
+              As a side gig, I create music, work with sound design and geek out on all things audio!
+            </div>
+          </Paper>
+        </div>
+      </div>
+      </section>
+    </>
   );
 }
+
+// Mechanical engineer turned ambitious full stack web developer located in Denver, Colorado. 
+// Through project experiences using Ruby on Rails, JavaScript, React, RESTful APIs, HTML, and CSS, 
+// I have developed a zeal for discovering new ways of connecting people, sharing ideas, and advancing culture through modern web development. 
+// I love the intersection of creativity and analytical problem solving involved in creating applications. 
+// I am passionate about electronic music and am learning music production on Ableton in my free time.

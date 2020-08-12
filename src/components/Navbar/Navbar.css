@@ -13,7 +13,8 @@
     height: 80px;
     cursor: pointer;
     transition: all .5s ease-in-out;
-    z-index: 1;
+    margin-top: 20px;
+    margin-right: 10px;
 }
 
 .menu-btn_burger {
@@ -63,7 +64,7 @@
 
 .menu-links {
     text-decoration: none;
-    color: var(--nav-color);
+    color: var(--nav-color-1);
 }
 
 
@@ -85,5 +86,5 @@ span.MuiTypography-displayBlock, svg.MuiSvgIcon-root, .menu-item {
 }
 
 div.MuiListItemIcon-root {
-    color: var(--nav-color);
+    color: var(--nav-color-1);
 }
