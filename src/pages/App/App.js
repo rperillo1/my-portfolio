@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import TweenOne from 'rc-tween-one';
 import SvgMorphPlugin from 'rc-tween-one/lib/plugin/SvgMorphPlugin';
 import Nav from '../../components/Nav/Nav'
+import Footer from '../../components/Footer/Footer'
 import useToggle from '../../hooks/useToggle'
 import Animation from '../../components/Animation/Animation'
 import Projects from '../Projects/Projects'
@@ -44,6 +45,9 @@ function App() {
               } />
             </Switch>
           </main>
+          <footer>
+            <Footer/>
+          </footer>
         </>
         :
         <Animation />

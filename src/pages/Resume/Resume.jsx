@@ -15,11 +15,7 @@ const useStyles = makeStyles((theme) => ({
     wrapper: {
         width: 100 + theme.spacing(2),
     },
-    paper: {
-        // zIndex: 1,
-        // position: 'relative',
-        // margin: theme.spacing(1),
-    }
+
 }));
 
 
@@ -48,7 +44,7 @@ function Resume() {
                 <Slide direction="left" in={checked} mountOnEnter unmountOnExit
                 {...(true ? { timeout: 800 } : {})}
                 >
-                    <Paper elevation={4} className={classes.paper}>
+                    <Paper elevation={4}>
                         <body>
                             <object id='resume-obj' data={LetterOfRec} type="application/pdf">
                                 <embed src={LetterOfRec} type="application/pdf" />
@@ -58,7 +54,7 @@ function Resume() {
                 </Slide>
             </div>
             <div>
-                <h1 className='flex-container'>Resume</h1>
+                <h1 className='flex-container title-font-3'>Resume</h1>
                 <html className='flex-container'>
                     <body>
                         <object id='resume-obj' data={ResumePDF} type="application/pdf">

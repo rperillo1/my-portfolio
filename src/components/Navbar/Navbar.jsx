@@ -15,7 +15,7 @@ import './Navbar.css'
 
 function Navbar() {
     const [drawer, toggleDrawer] = useToggle(false)
-    const [isLoaded, toggleIsLoaded] = useState(true)
+    // const [isLoaded, toggleIsLoaded] = useState(true)
 
     const list = () => (
         <div
@@ -43,11 +43,10 @@ function Navbar() {
     return (
         <div>
             <div className='flex-container'>
-                <Slide direction="right" in={isLoaded} mountOnEnter unmountOnExit
-                style={{ transformOrigin: '0 0 0' }}
-                {...(isLoaded ? { timeout: 1200 } : {})}
+                <Slide direction="right" in={true} mountOnEnter unmountOnExit
+                    {...(true ? { timeout: 1200 } : {})}
                 >
-                        <h3>Robert Perillo</h3>
+                    <h1 className='title-font'>Robert <br/> Perillo</h1>
                 </Slide>
             </div>
             <div id='menuToggle' onClick={() => toggleDrawer(true)}

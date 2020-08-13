@@ -6,8 +6,29 @@
   --text-color-3: #5382c9;
 }
 
-
-
 .App {
   text-align: center;
+}
+
+.text-font {
+  font-family: 'Istok Web', sans-serif;
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+.title-font {
+  font-family: 'Bungee Shade', cursive;
+}
+
+.title-font-2 {
+  font-family: 'Londrina Outline', cursive;
+  text-decoration: none;
+}
+
+.title-font-3 {
+  font-family: 'Saira Stencil One', cursive;
+}
+
+.title-font-4 {
+  font-family: 'Orbitron', sans-serif;
 }
