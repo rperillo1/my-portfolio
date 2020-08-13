@@ -1,7 +1,0 @@
-#spotify {
-    background-color: var(--nav-color);
-}
-
-iframe.SpotifyPlayer {
-    border-radius: 20px;
-}

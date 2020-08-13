@@ -46,7 +46,13 @@ function Navbar() {
                 <Slide direction="right" in={true} mountOnEnter unmountOnExit
                     {...(true ? { timeout: 1200 } : {})}
                 >
-                    <h1 className='title-font'>Robert <br/> Perillo</h1>
+                    <h1 className='title-font'>Robert</h1>
+                </Slide>
+                &nbsp;&nbsp;&nbsp;
+                <Slide direction="left" in={true} mountOnEnter unmountOnExit
+                    {...(true ? { timeout: 1200 } : {})}
+                >
+                    <h1 className='title-font'>Perillo</h1>
                 </Slide>
             </div>
             <div id='menuToggle' onClick={() => toggleDrawer(true)}
