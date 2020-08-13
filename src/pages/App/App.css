@@ -1,14 +1,16 @@
 :root {
   --nav-color: #65c7f5f1;
-  --nav-color-1: #0b0c10;
-  --text-color-1: #e7e6e6;
+  --nav-color-1: #f8eded;
+  --text-color-1: #2c2929;
   --text-color-2: #b0faff;
   --text-color-3: #5382c9;
 }
 
 .App {
   text-align: center;
+  min-height: 100vh;
 }
+
 
 .text-font {
   font-family: 'Istok Web', sans-serif;
@@ -31,4 +33,11 @@
 
 .title-font-4 {
   font-family: 'Orbitron', sans-serif;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }

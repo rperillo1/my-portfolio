@@ -29,9 +29,9 @@ function App() {
     <>
       {isLoaded ?
         <>
-          <header>
+          <nav>
             <Nav />
-          </header>
+          </nav>
           <main>
             <Switch>
               <Route exact path='/projects' render={({ history }) =>

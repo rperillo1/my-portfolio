@@ -20,3 +20,9 @@
     justify-content: space-around;
     margin-bottom: 10px;
 }
+
+#footer {
+    height: 130px;
+    position: relative;
+    background-color: var(--nav-color-1);
+}

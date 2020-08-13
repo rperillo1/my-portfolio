@@ -6,7 +6,7 @@ import './Nav.css'
 function Nav() {
 
     return (
-        <div className='landing-page'>
+        <div className='nav-bar'>
             <Navbar />
         </div>
     )

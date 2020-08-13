@@ -13,3 +13,7 @@
 .letter-img {
     max-width: 65vw;
 }
+
+#resume-page {
+    background-color: var(--text-color-1);
+}

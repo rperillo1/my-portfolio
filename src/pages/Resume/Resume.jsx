@@ -29,7 +29,7 @@ function Resume() {
 
 
     return (
-        <>
+        <div id='resume-page'>
             <div className='letter-container'>
                 <div className={classes.root}>
                     <div className={classes.wrapper}>
@@ -42,7 +42,7 @@ function Resume() {
             </div>
             <div className='flex-container'>
                 <Slide direction="left" in={checked} mountOnEnter unmountOnExit
-                {...(true ? { timeout: 800 } : {})}
+                    {...(true ? { timeout: 800 } : {})}
                 >
                     <Paper elevation={4}>
                         <body>
@@ -63,7 +63,7 @@ function Resume() {
                     </body>
                 </html>
             </div>
-        </>
+        </div>
     )
 }
 
