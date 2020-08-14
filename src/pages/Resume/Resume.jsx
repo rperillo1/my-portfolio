@@ -58,7 +58,7 @@ function Resume() {
                 <html className='flex-container'>
                     <body>
                         <object id='resume-obj' data={ResumePDF} type="application/pdf">
-                            <embed src={ResumePDF} type="application/pdf" />
+                            <embed src={ResumePDF} type="application/pdf"/>
                         </object>
                     </body>
                 </html>
