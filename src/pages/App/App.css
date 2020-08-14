@@ -20,11 +20,13 @@
 
 .title-font {
   font-family: 'Bungee Shade', cursive;
+  font-size: 5.4vmin;
 }
 
 .title-font-2 {
   font-family: 'Londrina Outline', cursive;
   text-decoration: none;
+  font-weight: 700;
 }
 
 .title-font-3 {
