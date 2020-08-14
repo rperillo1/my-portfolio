@@ -42,7 +42,7 @@ function Navbar() {
 
     return (
         <div>
-            <div className='flex-container'>
+            <div className='flex-container nav-name'>
                 <Slide direction="right" in={true} mountOnEnter unmountOnExit
                     {...(true ? { timeout: 1200 } : {})}
                 >

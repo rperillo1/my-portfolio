@@ -61,7 +61,7 @@ export default function ProfileCard() {
             <Paper elevation={3} className={`${classes.root} profile-text`}>
               <div className='text-font'>
                 Audio Engineer turned Software Developer.
-                Through project experiences using JavaScript, Node, Express, React, RESTful APIs, HTML and CSS, I have developed a zeal for building efficient web applications.
+                Through project experience using JavaScript, Node, Express, React, RESTful APIs, HTML and CSS, I have developed a zeal for building efficient web applications.
                 I thrive on constructive criticism and value empathy, accountability and transparency in a workplace.
                 I work well in team environments and respect the time that people give to me to further my knowledge base.
                 As a side gig, I create music, work with sound design and geek out on all things audio!

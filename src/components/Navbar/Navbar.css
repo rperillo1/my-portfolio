@@ -89,3 +89,10 @@ div.MuiListItemIcon-root {
     color: var(--nav-color-1);
 }
 
+.nav-name {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 20px;
+    margin-left: 7vmin;
+}
