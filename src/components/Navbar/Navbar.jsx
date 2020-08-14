@@ -24,7 +24,7 @@ function Navbar() {
             onKeyDown={() => toggleDrawer(false)}
         >
             <List>
-                {['Projects', 'Resume', 'Profile'].map((text, idx) => (
+                {['Projects', 'Resume', 'About'].map((text, idx) => (
                     <Link exact to={`/${text}`} className='menu-links'>
                         <ListItem button key={text} className='menu-items'>
                             <ListItemIcon>

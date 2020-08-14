@@ -20,7 +20,7 @@ function App() {
   useEffect(() => {
     const loading = setTimeout(function () {
       toggleIsLoaded();
-    }, 1200);
+    }, 1500);
     return () => clearTimeout(loading)
   }, [])
 
@@ -40,7 +40,7 @@ function App() {
               <Route exact path='/resume' render={({ history }) =>
                 <Resume history={history} />
               } />
-              <Route exact path='/profile' render={({ history }) =>
+              <Route exact path='/about' render={({ history }) =>
                 <Profile history={history} />
               } />
             </Switch>

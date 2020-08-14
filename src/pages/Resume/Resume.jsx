@@ -56,7 +56,7 @@ function Resume() {
             <div>
                 <h1 className='flex-container title-font-3'>Resume</h1>
                 <html className='flex-container'>
-                    <body>
+                    <body id='resume-body'>
                         <object id='resume-obj' data={ResumePDF} type="application/pdf">
                             <embed src={ResumePDF} type="application/pdf"/>
                         </object>
