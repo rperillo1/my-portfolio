@@ -52,11 +52,14 @@
 }
 
 #spotify {
+    display: flex;
+    align-items: center;
     width: 55%;
+    height: 420px;
 }
 
 .spotify-text {
-    color: white;
+    color: black;
 }
 
 iframe.SpotifyPlayer {

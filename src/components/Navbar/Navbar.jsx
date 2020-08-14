@@ -50,7 +50,7 @@ function Navbar() {
                 </Slide>
                 &nbsp;&nbsp;&nbsp;
                 <Slide direction="left" in={true} mountOnEnter unmountOnExit
-                    {...(true ? { timeout: 1200 } : {})}
+                    {...(true ? { timeout: 2300 } : {})}
                 >
                     <h1 className='title-font'>Perillo</h1>
                 </Slide>
