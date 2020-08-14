@@ -11,11 +11,11 @@ function Footer() {
                 <div className='flex-container'>
                     <h1 className='title-font-2'>=></h1>
                     &nbsp;&nbsp;&nbsp;&nbsp;
-                    <Link className='title-font-2' to='/profile'><h1>Profile</h1></Link>
+                    <Link className='title-font-2' to='/about'><h1>About</h1></Link>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <Link className='title-font-2' to='/resume'><h1>Resume</h1></Link>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <Link className='title-font-2' to='/portfolio'><h1>Projects</h1></Link>
+                    <Link className='title-font-2' to='/projects'><h1>Projects</h1></Link>
                 </div>
             </div>
             <div id='footer-contact'>

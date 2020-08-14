@@ -6,9 +6,8 @@
   --text-color-3: #5382c9;
 }
 
-.App {
-  text-align: center;
-  min-height: 100vh;
+#App {
+  margin: 0;
 }
 
 

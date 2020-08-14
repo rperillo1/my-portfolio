@@ -29,25 +29,27 @@ function App() {
     <>
       {isLoaded ?
         <>
-          <nav>
-            <Nav />
-          </nav>
-          <main>
-            <Switch>
-              <Route exact path='/projects' render={({ history }) =>
-                <Projects history={history} />
-              } />
-              <Route exact path='/resume' render={({ history }) =>
-                <Resume history={history} />
-              } />
-              <Route exact path='/about' render={({ history }) =>
-                <Profile history={history} />
-              } />
-            </Switch>
-          </main>
-          <footer>
-            <Footer/>
-          </footer>
+          <div id='App'>
+            <nav className='nav'>
+              <Nav />
+            </nav>
+            <main className='main'>
+              <Switch>
+                <Route exact path='/projects' render={({ history }) =>
+                  <Projects history={history} />
+                } />
+                <Route exact path='/resume' render={({ history }) =>
+                  <Resume history={history} />
+                } />
+                <Route exact path='/about' render={({ history }) =>
+                  <Profile history={history} />
+                } />
+              </Switch>
+            </main>
+            <footer className='footer'>
+              <Footer />
+            </footer>
+          </div>
         </>
         :
         <Animation />
