@@ -10,7 +10,7 @@ function Animation() {
         d: 'M60,10L60,90L140,90L140,10Z',
         yoyo: true,
         repeat: -1,
-        duration: 1000,
+        duration: 800,
     };
 
     return (
