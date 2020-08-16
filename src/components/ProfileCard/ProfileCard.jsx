@@ -49,7 +49,7 @@ export default function ProfileCard() {
             </Grow>
           </div>
           <div className='flex-container'>
-            <Link to="/portfolio" id='projects-link' className='title-font-2'> Check My Work </Link>
+            <Link to="/projects" id='projects-link' className='title-font-2'> Check My Work </Link>
           </div>
         </div>
         <div id='middle' className='flex-container'>
