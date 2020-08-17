@@ -11,6 +11,7 @@ import './Resume.css'
 const useStyles = makeStyles((theme) => ({
     root: {
         height: 120,
+        marginBottom: 30
     },
     wrapper: {
         width: 100 + theme.spacing(2),
@@ -45,23 +46,26 @@ function Resume() {
                     {...(true ? { timeout: 800 } : {})}
                 >
                     <Paper elevation={4}>
-                        <body>
-                            <object id='resume-obj' data={LetterOfRec} type="application/pdf">
+                        <h3 className='flex-container title-font-3'>Letter of Recommendation</h3>
+                        <img src='https://i.imgur.com/8lN2Shp.png' id='letter-img' />
+                        <body id='letter-body'>
+                            <object id='letter-obj' data={LetterOfRec} type="application/pdf">
                                 <embed src={LetterOfRec} type="application/pdf" />
                             </object>
                         </body>
                     </Paper>
                 </Slide>
             </div>
-            <div>
-                <h1 className='flex-container title-font-3'>Resume</h1>
-                <html className='flex-container'>
+            <div className='flex-container'>
+                <Paper elevation={4}>
+                    <h3 className='flex-container title-font-3'>Resume</h3>
+                    <img src='https://i.imgur.com/J7YQmuE.png' id='resume-img' />
                     <body id='resume-body'>
                         <object id='resume-obj' data={ResumePDF} type="application/pdf">
-                            <embed src={ResumePDF} type="application/pdf"/>
+                            <embed src={ResumePDF} type="application/pdf" />
                         </object>
                     </body>
-                </html>
+                </Paper>
             </div>
         </div>
     )

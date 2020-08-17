@@ -1,20 +1,50 @@
-#resume-obj {
-    width: 85vw;
-    height: 100vh;
+@media only screen and (max-width: 767px) {
+    .letter-container {
+        height: 30px;
+        padding: 5px;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    #letter-img {
+        width: 95%;
+    }
+    #resume-page {
+        background-color: rgba(50, 174, 212, 0.678);
+    }
+    #resume-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+    }
+    #resume-body {
+        display: none;
+    }
+    #letter-body {
+        display: none;
+    }
 }
 
-
-.letter-container {
-    height: 30px;
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-}
-
-.letter-img {
-    max-width: 65vw;
-}
-
-#resume-page {
-    background-color: rgba(50, 174, 212, 0.678);
+@media only screen and (min-width: 768px) {
+    #resume-obj, #letter-obj {
+        width: 85vw;
+        height: 100vh;
+    }
+    .letter-container {
+        height: 30px;
+        padding: 5px;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    #resume-page {
+        background-color: rgba(50, 174, 212, 0.678);
+    }
+    #resume-img {
+        display: none;
+    }
+    #letter-img {
+        display: none;
+    }
 }

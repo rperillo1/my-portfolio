@@ -14,13 +14,13 @@ function TitleAnimations() {
                 in={true}
                 {...(true ? { timeout: 3200 } : {})}
             >
-                <h1 className="flex-container title-font-4" id='title-header'> | &nbsp;&nbsp; Audio Engineer </h1>
+                <h1 className="flex-container title-font-4" id='title-header'>  &nbsp;&nbsp; Audio Engineer </h1>
             </Grow>
             <Grow
                 in={true}
                 {...(true ? { timeout: 4500 } : {})}
             >
-                <h1 className="flex-container title-font-4" id='title-header'> | &nbsp;&nbsp; Outdoor Enthusiast</h1>
+                <h1 className="flex-container title-font-4" id='title-header'>  &nbsp;&nbsp; Outdoor Enthusiast</h1>
             </Grow>
         </div>
     )

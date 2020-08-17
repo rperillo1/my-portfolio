@@ -1,30 +1,21 @@
 @media only screen and (max-width: 699px) {
-    #footer {
-        /* background-color: blue; */
-    }
-    
     .desktop-text {
         display: none;
     }
     
-    .mobile-text {
-        /* display: inline-block; */
-    }
-    
-    #footer-contact {
-        display: flex;
-        justify-content: space-around;
-    }
-    
     #link-container {
         display: flex;
-        justify-content: space-around;
-        margin-bottom: 10px;
+        justify-content: center;
         align-items: center;
     }
 
     #footer {
         background-color: var(--nav-color-1);
+        height: 7rem;
+    }
+
+    .mobile-text {
+        margin: 2vmin;
     }
 }
 
@@ -49,7 +40,7 @@
         margin-bottom: 10px;
     }
     #footer {
-        height: 10.5rem;
+        height: 8rem;
         position: relative;
         bottom: 0;
         left: 0;
@@ -59,6 +50,7 @@
     .desktop-text {
         display: flex;
         justify-content: center;
+        margin: 6px;
     }
     .mobile-text {
         display: none;

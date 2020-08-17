@@ -6,11 +6,12 @@ import Paper from '@material-ui/core/Paper';
 import SpotifyCard from '../../components/SpotifyCard/SpotifyCard'
 import TitleAnimations from '../../components/TitleAnimations/TitleAnimations'
 import './ProfileCard.css'
+import { findByLabelText } from '@testing-library/react';
 
 const useStyles = makeStyles({
   root: {
     maxWidth: 400,
-    borderRadius: 8
+    borderRadius: 8,
   },
   img: {
     width: 920,
@@ -32,10 +33,12 @@ export default function ProfileCard() {
             <Link to="/projects" id='projects-link' className='title-font-2'> Check My Work </Link>
           </div>
         </div>
-        <div id='middle' className='flex-container'>
+        <div id='middle'>
+          <div className='flex-container'>
           <Paper elevation={3} className={classes.root}>
             <img src="https://i.imgur.com/Ptk7n58.png" alt="" className='profile-img' />
           </Paper>
+          </div>
           &nbsp;&nbsp;&nbsp;&nbsp;
         <div className='flex-container'>
             <Paper elevation={3} className={`${classes.root} profile-text`}>

@@ -23,8 +23,8 @@ function Footer() {
                 <h2 className='title-font-2 desktop-text'>perillo.robert@gmail.com</h2>
                 <div id='link-container'>
                     <h3 className='title-font-3 mobile-text'>Connect:</h3>
-                    <LinkedInIcon />
-                    <GitHubIcon />
+                    <LinkedInIcon className='mobile-text'/>
+                    <GitHubIcon className='mobile-text'/>
                 </div>
             </div>
         </div>
