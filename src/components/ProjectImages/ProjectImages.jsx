@@ -49,20 +49,21 @@ const projectImages = [
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        width: '80%',
+        width: '90%',
         flexGrow: 1,
     },
     header: {
         display: 'flex',
         alignItems: 'center',
-        height: 50,
+        justifyContent: 'center',
+        textAlign: 'center',
+        height: 150,
         paddingLeft: theme.spacing(4),
         backgroundColor: theme.palette.background.default,
     },
     img: {
-        // height: 500,
         display: 'block',
-        maxWidth: 700,
+        maxWidth: 800,
         overflow: 'hidden',
         width: '100%',
     },
@@ -85,8 +86,9 @@ function ProjectImages() {
     const handleStepChange = (step) => {
         setActiveStep(step);
     };
+
     return (
-        <>
+        <div className='flex-container'>
             <div className={classes.root}>
                 <Paper square elevation={0} className={classes.header}>
                     <Typography>{projectImages[activeStep].desc}</Typography>
@@ -102,7 +104,9 @@ function ProjectImages() {
                             {Math.abs(activeStep - index) <= 2 ? (
                                 <div className="flex-container">
                                     <img className={classes.img} src={step.laptopImg} />
-                                    <img className='mobile-img' src={step.mobileImg} />
+                                    {step.mobileImg === null ? 
+                                    null
+                                : <img className='mobile-img' src={step.mobileImg} /> }
                                 </div>
                             ) : null}
                         </div>
@@ -116,18 +120,18 @@ function ProjectImages() {
                     nextButton={
                         <Button size="small" onClick={handleNext} disabled={activeStep === maxSteps - 1}>
                             Next
-            {theme.direction === 'rtl' ? <KeyboardArrowLeft /> : <KeyboardArrowRight />}
+                            {theme.direction === 'rtl' ? <KeyboardArrowLeft /> : <KeyboardArrowRight />}
                         </Button>
                     }
                     backButton={
                         <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
                             {theme.direction === 'rtl' ? <KeyboardArrowRight /> : <KeyboardArrowLeft />}
-            Back
-          </Button>
+                        Back
+                        </Button>
                     }
                 />
             </div>
-        </>
+            </div>
     )
 }
 

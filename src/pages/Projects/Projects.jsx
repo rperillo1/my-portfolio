@@ -5,7 +5,7 @@ import ProjectImages from '../../components/ProjectImages/ProjectImages'
 function Projects() {
     return (
         <div>
-            <h1>Projects:</h1>
+            <h1 className='flex-container'>Projects:</h1>
             <ProjectImages />
         </div>
     )
