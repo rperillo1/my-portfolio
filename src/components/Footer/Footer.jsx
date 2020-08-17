@@ -19,9 +19,10 @@ function Footer() {
                 </div>
             </div>
             <div id='footer-contact'>
-                <h3 className='title-font-3'>Connect With Me :</h3>
-                <h2 className='title-font-2'>perillo.robert@gmail.com</h2>
+                <h3 className='title-font-3 desktop-text'>Connect With Me :</h3>
+                <h2 className='title-font-2 desktop-text'>perillo.robert@gmail.com</h2>
                 <div id='link-container'>
+                    <h3 className='title-font-3 mobile-text'>Connect:</h3>
                     <LinkedInIcon />
                     <GitHubIcon />
                 </div>

@@ -1,11 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import { makeStyles } from '@material-ui/core/styles';
-// import { Link } from '@material-ui/core';
 import { Button } from 'react-bootstrap';
 import Paper from '@material-ui/core/Paper';
-import Grow from '@material-ui/core/Grow';
 import SpotifyCard from '../../components/SpotifyCard/SpotifyCard'
+import TitleAnimations from '../../components/TitleAnimations/TitleAnimations'
 import './ProfileCard.css'
 
 const useStyles = makeStyles({
@@ -28,26 +27,7 @@ export default function ProfileCard() {
     <>
       <section id='main-section'>
         <div id='top'>
-          <div className='flex-container'>
-            <Grow
-              in={true}
-              {...(true ? { timeout: 2000 } : {})}
-            >
-              <h1 className="flex-container title-font-4" id='title-header'>Full Stack Developer </h1>
-            </Grow>
-            <Grow
-              in={true}
-              {...(true ? { timeout: 3200 } : {})}
-            >
-              <h1 className="flex-container title-font-4" id='title-header'> | &nbsp;&nbsp; Audio Engineer </h1>
-            </Grow>
-            <Grow
-              in={true}
-              {...(true ? { timeout: 4500 } : {})}
-            >
-              <h1 className="flex-container title-font-4" id='title-header'> | &nbsp;&nbsp; Outdoor Enthusiast</h1>
-            </Grow>
-          </div>
+          <TitleAnimations />
           <div className='flex-container'>
             <Link to="/projects" id='projects-link' className='title-font-2'> Check My Work </Link>
           </div>
