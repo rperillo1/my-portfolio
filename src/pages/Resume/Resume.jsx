@@ -28,6 +28,18 @@ function Resume() {
         setChecked((prev) => !prev);
     };
 
+    // useEffect(() => {
+    //     const timer = setTimeout(() => {
+    //       console.log('This will run after 1 second!')
+    //     }, 1000);
+    //     return () => clearTimeout(timer);
+    //   }, []);
+    
+    // fadeInTimout = () => {
+    //     const timer = setTimeout(() => {
+    //         console.log('This will run after 1 second!')
+    //       }, 1000);
+    // }
 
     return (
         <div id='resume-page'>
@@ -36,15 +48,13 @@ function Resume() {
                     <div className={classes.wrapper}>
                         <FormControlLabel
                             control={<Switch checked={checked} onChange={handleChange} />}
-                            label="Show Letter of Recommendation"
+                            label={checked ? "Show Resume" : "Show Letter of Recommendation"}
                         />
                     </div>
                 </div>
             </div>
             <div className='flex-container'>
-                <Slide direction="left" in={checked} mountOnEnter unmountOnExit
-                    {...(true ? { timeout: 800 } : {})}
-                >
+                <Slide direction="down" in={checked} mountOnEnter unmountOnExit timeout={400}>
                     <Paper elevation={4}>
                         <h3 className='flex-container title-font-3'>Letter of Recommendation</h3>
                         <img src='https://i.imgur.com/8lN2Shp.png' id='letter-img' />
@@ -57,15 +67,17 @@ function Resume() {
                 </Slide>
             </div>
             <div className='flex-container'>
-                <Paper elevation={4}>
-                    <h3 className='flex-container title-font-3'>Resume</h3>
-                    <img src='https://i.imgur.com/J7YQmuE.png' id='resume-img' />
-                    <body id='resume-body'>
-                        <object id='resume-obj' data={ResumePDF} type="application/pdf">
-                            <embed src={ResumePDF} type="application/pdf" />
-                        </object>
-                    </body>
-                </Paper>
+                <Slide direction="up" in={!checked} mountOnEnter unmountOnExit timeout={400}>
+                    <Paper elevation={4}>
+                        <h3 className='flex-container title-font-3'>Resume</h3>
+                        <img src='https://i.imgur.com/J7YQmuE.png' id='resume-img' />
+                        <body id='resume-body'>
+                            <object id='resume-obj' data={ResumePDF} type="application/pdf">
+                                <embed src={ResumePDF} type="application/pdf" />
+                            </object>
+                        </body>
+                    </Paper>
+                </Slide>
             </div>
         </div>
     )
