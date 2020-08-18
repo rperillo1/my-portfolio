@@ -26,8 +26,8 @@ export default function AboutComponents() {
           <ProjectSlides />
         </div>
         <div id='bottom'>
-          <div className='flex-container title-font-4 spotify-text'>
-            <h1>My Album on Spotify:</h1>
+          <div className='flex-container'>
+            <h1 className='title-font-4 spotify-text'>My Album on Spotify:</h1>
           </div>
           <div className='flex-container'>
             <SpotifyCard />

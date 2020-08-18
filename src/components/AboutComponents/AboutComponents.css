@@ -64,6 +64,7 @@
     }
     .spotify-text {
         color: black;
+        margin-top: 4.5vmin;
     }
     iframe.SpotifyPlayer {
         border-radius: 20px;
@@ -104,6 +105,9 @@
     #middle-2 {
         background-color: white;
     }
+    #middle-2 h2 {
+        padding-top: 4.5vmin;
+    }
     #bottom {
         background-color: rgba(67, 211, 255, 0.582);
     }
@@ -132,8 +136,10 @@
     }
     .spotify-text {
         color: black;
+        margin-top: 4.5vmin;
     }
     iframe.SpotifyPlayer {
         border-radius: 20px;
     }
+
 }

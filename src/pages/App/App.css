@@ -1,6 +1,6 @@
 :root {
   --nav-color: #65c7f5f1;
-  --nav-color-1: #ffeaea;
+  --nav-color-1: #fff7f7e3;
   --text-color-1: #2c2929;
   --text-color-2: #b0faff;
   --text-color-3: #5382c9;
@@ -40,5 +40,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 8px;
 }

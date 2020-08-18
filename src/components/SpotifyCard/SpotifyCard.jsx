@@ -2,9 +2,9 @@ import React from 'react';
 import SpotifyPlayer from 'react-spotify-player';
 
 const size = {
-    width: '100%',
-    height: 300,
-    borderRadius: 20
+    width: '96%',
+    height: 345,
+    borderRadius: 25
 };
 const view = 'coverart';
 const theme = 'black';
