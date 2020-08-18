@@ -57,7 +57,7 @@ function Resume() {
                 <Slide direction="down" in={checked} mountOnEnter unmountOnExit timeout={400}>
                     <Paper elevation={4}>
                         <h3 className='flex-container title-font-3'>Letter of Recommendation</h3>
-                        <img src='https://i.imgur.com/8lN2Shp.png' id='letter-img' />
+                        <img src='https://i.imgur.com/8lN2Shp.png' id='letter-img' alt='Roberts Letter of Recommendation'/>
                         <body id='letter-body'>
                             <object id='letter-obj' data={LetterOfRec} type="application/pdf">
                                 <embed src={LetterOfRec} type="application/pdf" />
@@ -70,7 +70,7 @@ function Resume() {
                 <Slide direction="up" in={!checked} mountOnEnter unmountOnExit timeout={400}>
                     <Paper elevation={4}>
                         <h3 className='flex-container title-font-3'>Resume</h3>
-                        <img src='https://i.imgur.com/J7YQmuE.png' id='resume-img' />
+                        <img src='https://i.imgur.com/J7YQmuE.png' id='resume-img' alt="Robert's Resume"/>
                         <body id='resume-body'>
                             <object id='resume-obj' data={ResumePDF} type="application/pdf">
                                 <embed src={ResumePDF} type="application/pdf" />

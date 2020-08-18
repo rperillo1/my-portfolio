@@ -1,12 +1,14 @@
 import React from 'react';
-import ProfileCard from '../../components/ProfileCard/ProfileCard'
+import AboutComponents from '../../components/AboutComponents/AboutComponents'
 
 
 function Profile() {
     return (
+        <>
         <main id='profile-main'>
-            <ProfileCard />
+            <AboutComponents />
         </main>
+        </>
     )
 }
 
