@@ -64,9 +64,3 @@ export default function ProfileCard() {
     </>
   );
 }
-
-// Mechanical engineer turned ambitious full stack web developer located in Denver, Colorado. 
-// Through project experiences using Ruby on Rails, JavaScript, React, RESTful APIs, HTML, and CSS, 
-// I have developed a zeal for discovering new ways of connecting people, sharing ideas, and advancing culture through modern web development. 
-// I love the intersection of creativity and analytical problem solving involved in creating applications. 
-// I am passionate about electronic music and am learning music production on Ableton in my free time.
