@@ -5,6 +5,7 @@ import ProfileCard from '../ProfileCard/ProfileCard'
 import TitleAnimations from '../TitleAnimations/TitleAnimations'
 import ProjectSlides from '../ProjectSlides/ProjectSlides'
 import CheckWorkButton from '../CheckWorkButton/CheckWorkButton'
+import Logos from '../Logos/Logos'
 import './AboutComponents.css'
 
 
@@ -24,6 +25,8 @@ export default function AboutComponents() {
         <div id='middle-2'>
           <h2 className='flex-container title-font-4'>Sample Work:</h2>
           <ProjectSlides />
+          <h2 className='flex-container title-font-4'>Technologies Used:</h2>
+          <Logos />
         </div>
         <div id='bottom'>
           <div className='flex-container'>

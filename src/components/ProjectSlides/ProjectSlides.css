@@ -3,5 +3,9 @@
 }
 
 .mobile-img {
-    width: 20vmin;
+    width: 23vmin;
+}
+
+div.MuiMobileStepper-root {
+    background-color: rgba(182, 182, 182, 0.438);
 }
