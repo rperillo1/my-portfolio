@@ -17,9 +17,6 @@ export default function AboutComponents() {
         <div id='top'>
           <TitleAnimations />
           <CheckWorkButton />
-          {/* <div className='flex-container'>
-            <Link to="/projects" id='projects-link' className='title-font-2'> Check My Work </Link>
-          </div> */}
         </div>
         <div id='middle'>
           <ProfileCard />

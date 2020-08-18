@@ -5,9 +5,9 @@ import './CheckWorkButton.css'
 function CheckWorkButton() {
     return (
         <div class="box">
-        <Link to="/projects" className='title-font-2'> 
+        <Link to="/projects" className='title-font-4'> 
             <div class="btn btn-two">
-                <h1>Check My Work</h1>
+                <span id='btn-text'>Check My Work</span>
             </div>
         </Link>
         </div>
