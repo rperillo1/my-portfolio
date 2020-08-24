@@ -7,15 +7,13 @@
 }
 
 .projects-container {
-    background-color: rgba(50, 174, 212, 0.678);
+    background-color: #54CEFC;
     text-align: center;
-    /* clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%); */
     border: none;
 }
 
 #project {
     clip-path: polygon(0 0%, 100% 4%, 100% 95%, 0% 100%);
-    /* padding-top: 20px; */
 }
 
 .project-imgs {
@@ -26,9 +24,17 @@
 
 }
 
+div.MuiPaper-rounded {
+    border-radius: 0%
+}
+
 .paper-desc {
-    width: 80%;
+    /* width: 80%; */
+    width: 70vmin;
+    margin: 0 auto;
     margin-bottom: 20px;
+    padding: 8px;
+    /* border-radius: 0%; */
 }
 
 hr {
@@ -63,10 +69,6 @@ hr {
 
 .empty-sec {
     height: 60px;
-    background-color: rgba(50, 174, 212, 0.678);
+    background-color: #54CEFC;
 }
 
-body {
-    background-color: rgba(50, 174, 212, 0.678);
-
-}

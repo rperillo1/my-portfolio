@@ -58,34 +58,36 @@ function Projects() {
 
     return (
         <>
-        <section className='empty-sec'></section>
-        <div className='projects-container'>
-            {projectImages.map((step, index) => (
-                <section id='project'>
-                    <div key={index}>
-                        <Paper elevation={3} className='paper-img'>
-                            <div className="flex-container project-imgs">
-                                <img className={classes.img} src={step.laptopImg} alt={`project ${index}`} />
-                                {step.mobileImg === null ? null
-                                    : <img className={classes.img} className='mobile-img' src={step.mobileImg} alt={`mobile project ${index}`} />}
-                            </div>
-                        </Paper>
-                        <Paper elevation={3} className='paper-desc'>
-                            <p className='descriptions'>{step.desc}</p>
-                        </Paper>
-                        <Paper elevation={3} className='paper-logos'>
-                            <div className='logos'>
-                                {step.logos.map(logo =>
-                                    <img src={logo} />
-                                )}
-                            </div>
-                        </Paper>
-                        <section className='empty-sec'></section>
-                        {/* <hr className={index % 2 === 0 ? 'left' : 'right'} /> */}
-                    </div>
-                </section>
+            <section className='empty-sec'></section>
+            <div className='projects-container'>
+                {projectImages.map((step, index) => (
+                    <>
+                    <section id='project'>
+                        <div key={index}>
+                            <Paper elevation={0} className='paper-img'>
+                                <div className="flex-container project-imgs">
+                                    <img className={classes.img} src={step.laptopImg} alt={`project ${index}`} />
+                                    {step.mobileImg === null ? null
+                                        : <img className={classes.img} className='mobile-img' src={step.mobileImg} alt={`mobile project ${index}`} />}
+                                </div>
+                            </Paper>
+                            <Paper elevation={0} className='paper-desc'>
+                                <p className='descriptions'>{step.desc}</p>
+                            </Paper>
+                            <Paper elevation={0} className='paper-logos'>
+                                <div className='logos'>
+                                    {step.logos.map(logo =>
+                                        <img src={logo} />
+                                    )}
+                                </div>
+                            </Paper>
+                            {/* <hr className={index % 2 === 0 ? 'left' : 'right'} /> */}
+                        </div>
+                    </section>
+                    <section className='empty-sec'></section>
+                    </>
             ))}
-        </div>
+            </div>
         </>
     )
 }
