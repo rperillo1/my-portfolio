@@ -7,17 +7,28 @@
 }
 
 .projects-container {
-    /* background-color: grey; */
+    background-color: rgba(50, 174, 212, 0.678);
     text-align: center;
+    /* clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%); */
+    border: none;
+}
+
+#project {
+    clip-path: polygon(0 0%, 100% 4%, 100% 95%, 0% 100%);
+    /* padding-top: 20px; */
 }
 
 .project-imgs {
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 .descriptions {
-    background-color: orange;
-    height: 100px;
+
+}
+
+.paper-desc {
+    width: 80%;
+    margin-bottom: 20px;
 }
 
 hr {
@@ -32,4 +43,30 @@ hr {
 
 .right {
     transform: rotate(-2deg)
+}
+
+.paper-img {
+    /* width: 80%; */
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paper-logos {
+    /* width: 80%; */
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.empty-sec {
+    height: 60px;
+    background-color: rgba(50, 174, 212, 0.678);
+}
+
+body {
+    background-color: rgba(50, 174, 212, 0.678);
+
 }

@@ -1,5 +1,6 @@
 import React from 'react';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
+import Paper from '@material-ui/core/Paper';
 import './Projects.css'
 
 
@@ -14,7 +15,7 @@ const projectImages = [
         laptopImg: 'https://i.imgur.com/cSkIKGT.png',
         mobileImg: 'https://i.imgur.com/X4MSt5Y.png',
         desc: 'Job Search Tracker! Track job application notes, company information, interest levels. Uses GitHubs jobs API to pull relevant job info.',
-        logos: ['https://i.imgur.com/a6uI0Vs.png', 'https://i.imgur.com/IGsHeNw.png', 'https://i.imgur.com/Oj5G0sZ.png', 'https://i.imgur.com/4aLfsJU.png', 'https://i.imgur.com/DCsmNit.png', 'https://i.imgur.com/UHCbPD3.png']
+        logos: ['https://i.imgur.com/a6uI0Vs.png', 'https://i.imgur.com/IGsHeNw.png', 'https://i.imgur.com/znLwmfG.png', 'https://i.imgur.com/6xfuexp.png', 'https://i.imgur.com/DCsmNit.png', 'https://i.imgur.com/UHCbPD3.png']
     },
     {
         laptopImg: 'https://i.imgur.com/moxIop7.png',
@@ -56,24 +57,36 @@ function Projects() {
     const classes = useStyles();
 
     return (
+        <>
+        <section className='empty-sec'></section>
         <div className='projects-container'>
             {projectImages.map((step, index) => (
-                <div key={index}>
-                    <div className="flex-container project-imgs">
-                        <img className={classes.img} src={step.laptopImg} alt={`project ${index}`} />
-                        {step.mobileImg === null ? null
-                            : <img className={classes.img} className='mobile-img' src={step.mobileImg} alt={`mobile project ${index}`} />}
+                <section id='project'>
+                    <div key={index}>
+                        <Paper elevation={3} className='paper-img'>
+                            <div className="flex-container project-imgs">
+                                <img className={classes.img} src={step.laptopImg} alt={`project ${index}`} />
+                                {step.mobileImg === null ? null
+                                    : <img className={classes.img} className='mobile-img' src={step.mobileImg} alt={`mobile project ${index}`} />}
+                            </div>
+                        </Paper>
+                        <Paper elevation={3} className='paper-desc'>
+                            <p className='descriptions'>{step.desc}</p>
+                        </Paper>
+                        <Paper elevation={3} className='paper-logos'>
+                            <div className='logos'>
+                                {step.logos.map(logo =>
+                                    <img src={logo} />
+                                )}
+                            </div>
+                        </Paper>
+                        <section className='empty-sec'></section>
+                        {/* <hr className={index % 2 === 0 ? 'left' : 'right'} /> */}
                     </div>
-                    <p className='descriptions'>{step.desc}</p>
-                    <div className='logos'>
-                        {step.logos.map(logo =>
-                            <img src={logo} />
-                        )}
-                    </div>
-                    <hr className={index % 2 === 0 ? 'left' : 'right'}/>
-                </div>
+                </section>
             ))}
         </div>
+        </>
     )
 }
 
