@@ -1,0 +1,10 @@
+.logos img {
+    width: 18vmin;
+    padding: 0px 6px;
+    border-radius: 8%;
+}
+
+.projects-container {
+    /* background-color: grey; */
+    text-align: center;
+}
