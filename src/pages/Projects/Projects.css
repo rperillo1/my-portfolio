@@ -2,9 +2,34 @@
     width: 18vmin;
     padding: 0px 6px;
     border-radius: 8%;
+    margin-top: 40px;
+    margin-bottom: 60px;
 }
 
 .projects-container {
     /* background-color: grey; */
     text-align: center;
+}
+
+.project-imgs {
+    margin-top: 50px;
+}
+
+.descriptions {
+    background-color: orange;
+    height: 100px;
+}
+
+hr {
+    height: 10px;
+    background-color: rgb(46, 45, 45);
+    margin-bottom: 30px;
+}
+
+.left {
+    transform: rotate(2deg); 
+}
+
+.right {
+    transform: rotate(-2deg)
 }

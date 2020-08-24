@@ -7,37 +7,37 @@ const projectImages = [
     {
         laptopImg: 'https://i.imgur.com/aFXN6ZW.png',
         mobileImg: 'https://i.imgur.com/AEZyr7b.png',
-        desc: 'D&D Character Manager. Track your character stats, spells, abilities, money and more! Technologies: Node, Express, React, MongoDB, Mongoose, HTML, CSS, Bootstrap, D&D 5e Players Handbook API',
+        desc: 'D&D Character Manager. Track your character stats, spells, abilities, money and more! Pulls spell information from the D&D 5e Players Handbook API',
         logos: ['https://i.imgur.com/hWrPRuJ.png', 'https://i.imgur.com/DCsmNit.png', 'https://i.imgur.com/oyV9d35.png', 'https://i.imgur.com/MoLOBzA.png', 'https://i.imgur.com/u0fDtEb.png', 'https://i.imgur.com/p14Spbf.png', 'https://i.imgur.com/GMHSzcr.png']
     },
     {
         laptopImg: 'https://i.imgur.com/cSkIKGT.png',
         mobileImg: 'https://i.imgur.com/X4MSt5Y.png',
-        desc: 'Job Search Tracker! Track job application notes, company information, interest levels. Technologies: Python, Django, PostgreSQL, VueJs, Github Jobs API, HTML, CSS',
+        desc: 'Job Search Tracker! Track job application notes, company information, interest levels. Uses GitHubs jobs API to pull relevant job info.',
         logos: ['https://i.imgur.com/a6uI0Vs.png', 'https://i.imgur.com/IGsHeNw.png', 'https://i.imgur.com/Oj5G0sZ.png', 'https://i.imgur.com/4aLfsJU.png', 'https://i.imgur.com/DCsmNit.png', 'https://i.imgur.com/UHCbPD3.png']
     },
     {
         laptopImg: 'https://i.imgur.com/moxIop7.png',
         mobileImg: 'https://i.imgur.com/aOpRNab.png',
-        desc: 'A gaming scheduling app. Sign up via google OAuth. Create friend groups and games within those groups. Then create polls of dates for your group members to vote on! Technologies: Express, Node, Mongoose, MongoDB, EJS, HTML, CSS, Materialize, Google Calendar API',
+        desc: 'A gaming scheduling app. Sign up via google OAuth. Create friend groups and games within those groups. Then create polls of dates for your group members to vote on! Uses the Google Calendar API so that you can post an event date that was chosen by your friends.',
         logos: ['https://i.imgur.com/DCsmNit.png', 'https://i.imgur.com/oyV9d35.png', 'https://i.imgur.com/MoLOBzA.png', 'https://i.imgur.com/u0fDtEb.png', 'https://i.imgur.com/p14Spbf.png', 'https://i.imgur.com/aajFadH.png']
     },
     {
         laptopImg: 'https://i.imgur.com/1Noyanj.png',
         mobileImg: 'https://i.imgur.com/YOTeiCy.png',
-        desc: 'Mobile responsive slot machine made with vanilla JavaScript, HTML & CSS',
+        desc: 'Mobile responsive slot machine.',
         logos: ['https://i.imgur.com/DCsmNit.png', 'https://i.imgur.com/EnsYkPa.png']
     },
     {
         laptopImg: 'https://i.imgur.com/HrcV3nI.png',
         mobileImg: null,
-        desc: 'A virtual dog show app. Allows you to sign in via google OAuth, create a dog profile yout dog to competitions for people to vote. Technologies: Express, Node, EJS templates, Javascript, Mongoose, MongoDB, HTML, CSS',
+        desc: 'A virtual dog show app. Allows you to sign in via google OAuth, create a dog profile to add your dog to competitions for users to vote.',
         logos: ['https://i.imgur.com/DCsmNit.png', 'https://i.imgur.com/oyV9d35.png', 'https://i.imgur.com/MoLOBzA.png', 'https://i.imgur.com/u0fDtEb.png', 'https://i.imgur.com/p14Spbf.png', 'https://i.imgur.com/EnsYkPa.png']
     },
     {
         laptopImg: 'https://i.imgur.com/RpK5zxW.png',
         mobileImg: null,
-        desc: 'Single Player RPG made with vanilla JavaScript, HTML, CSS (Grid, FLexbox, Bootstrap)',
+        desc: 'Single Player RPG. Create your character, choose a set of skills, go adventure and if you get through the forest and mountains and beat all the creatures before you lose all your life, YOU WIN! ',
         logos: ['https://i.imgur.com/DCsmNit.png', 'https://i.imgur.com/EnsYkPa.png']
     },
 ]
@@ -59,17 +59,18 @@ function Projects() {
         <div className='projects-container'>
             {projectImages.map((step, index) => (
                 <div key={index}>
-                    <div className="flex-container">
+                    <div className="flex-container project-imgs">
                         <img className={classes.img} src={step.laptopImg} alt={`project ${index}`} />
                         {step.mobileImg === null ? null
                             : <img className={classes.img} className='mobile-img' src={step.mobileImg} alt={`mobile project ${index}`} />}
                     </div>
-                    <p>{step.desc}</p>
+                    <p className='descriptions'>{step.desc}</p>
                     <div className='logos'>
                         {step.logos.map(logo =>
                             <img src={logo} />
                         )}
                     </div>
+                    <hr className={index % 2 === 0 ? 'left' : 'right'}/>
                 </div>
             ))}
         </div>
