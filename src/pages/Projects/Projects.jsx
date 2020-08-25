@@ -52,7 +52,7 @@ function Projects() {
     return (
         <div id='project-main'>
             {projectInfo.map((project, idx) =>
-            <div id='project' className={idx % 2 === 0 ? 'left' : 'right'}>
+            <div className='project' id={idx % 2 === 0 ? 'left' : 'right'}>
                 <div className='carousel' >
                     <h1 id='title'>{project.title}</h1>
                     <div>
