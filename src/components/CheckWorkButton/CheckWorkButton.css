@@ -21,7 +21,7 @@ div[class=box] {
 }
 
 .btn-two {
-    color: #FFF;
+    color: rgb(134, 134, 134);
     transition: all 0.5s;
     position: relative;
 }
@@ -46,7 +46,7 @@ div[class=box] {
     z-index: 1;
     transition: all 0.5s;
     border: 1px solid rgba(255, 255, 255, 0.4);
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.411);
 }
 
 .btn-two::after {
@@ -59,7 +59,7 @@ div[class=box] {
     z-index: 1;
     transition: all 0.5s;
     border: 1px solid rgba(255, 255, 255, 0.4);
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.521);
 }
 
 .btn-two:hover::before {

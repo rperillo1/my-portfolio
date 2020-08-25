@@ -1,9 +1,10 @@
 :root {
   --nav-color: #65c7f5f1;
-  --nav-color-1: #b1aeada8;
+  --nav-color-1: rgb(235, 231, 231);
   --text-color-1: #2c2929;
   --text-color-2: #b0faff;
-  --text-color-3: #5382c9;
+  --text-color-3: #353535ce;
+  --bg-color: rgba(255, 255, 255, 0.473);
 }
 
 #App {

@@ -10,7 +10,7 @@
         width: 95%;
     }
     #resume-page {
-        background-color: rgba(50, 174, 212, 0.678);
+        background-color: var(--bg-color);
     }
     #resume-img {
         display: flex;
@@ -39,7 +39,7 @@
         justify-content: center;
     }
     #resume-page {
-        background-color: rgba(50, 174, 212, 0.678);
+        background-color: var(--bg-color);
     }
     #resume-img {
         display: none;
