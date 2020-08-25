@@ -11,7 +11,7 @@
 
 #right {
     background-color: lightgray;
-    padding-bottom: 130px;
+    padding-bottom: 140px;
 }
 
 div.carousel {
@@ -26,9 +26,10 @@ button.control-arrow {
 }
 
 img.logo {
-    width: 20vmin;
+    width: 18vmin;
     padding: 2vmin;
     border-radius: 18px;
+    margin: auto;
 }
 
 #title {
@@ -45,7 +46,9 @@ img.logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 75%;
+    /* width: 75%; */
+    /* max-width: 75%; */
+    max-width: max-content;
     text-align: center;
     margin: auto;
     margin-top: 30px;

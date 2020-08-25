@@ -70,9 +70,7 @@ function Projects() {
                 </div>
                 <Paper elevation={4} className='paper-logos'>
                     { project.logos.map(logo =>
-                        <div className='logos'>
                             <img src={logo} className='logo'></img>
-                        </div>
                     )}
                 </Paper>    
             </div>
