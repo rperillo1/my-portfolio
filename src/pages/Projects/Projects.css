@@ -1,74 +1,39 @@
-.logos img {
-    width: 18vmin;
-    padding: 0px 6px;
-    border-radius: 8%;
-    margin-top: 40px;
-    margin-bottom: 60px;
-}
-
-.projects-container {
-    background-color: #54CEFC;
-    text-align: center;
-    border: none;
-}
-
 #project {
-    clip-path: polygon(0 0%, 100% 4%, 100% 95%, 0% 100%);
-}
-
-.project-imgs {
-    margin-top: 60px;
-}
-
-.descriptions {
-
-}
-
-div.MuiPaper-rounded {
-    border-radius: 0%
-}
-
-.paper-desc {
-    /* width: 80%; */
-    width: 70vmin;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    padding: 8px;
-    /* border-radius: 0%; */
-}
-
-hr {
-    height: 10px;
-    background-color: rgb(46, 45, 45);
-    margin-bottom: 30px;
+    clip-path: polygon(0 0%, 100% 6%, 100% 94%, 0% 100%);
 }
 
 .left {
-    transform: rotate(2deg); 
+    transform: rotate(2deg);
 }
 
 .right {
     transform: rotate(-2deg)
 }
 
-.paper-img {
-    /* width: 80%; */
-    margin-bottom: 20px;
+div.carousel {
+    width: 120vmin;
+    text-align: center;
+    margin: auto;
+}
+
+button.control-arrow {
+    width: 60px;
+    color: orange;
+}
+
+div.logos {
     display: flex;
-    align-items: center;
     justify-content: center;
-}
-
-.paper-logos {
-    /* width: 80%; */
-    margin-bottom: 20px;
-    display: flex;
     align-items: center;
-    justify-content: center;
+    padding-bottom: 10vmin;
 }
 
-.empty-sec {
-    height: 60px;
-    background-color: #54CEFC;
+img.logo {
+    width: 20vmin;
+    padding: 2vmin;
 }
 
+#title {
+    margin-bottom: 7px;
+    margin-top: 7px;
+}
