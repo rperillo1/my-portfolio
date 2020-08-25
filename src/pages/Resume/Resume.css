@@ -28,7 +28,7 @@
 
 @media only screen and (min-width: 768px) {
     #resume-obj, #letter-obj {
-        width: 85vw;
+        width: 80vw;
         height: 100vh;
     }
     .letter-container {
