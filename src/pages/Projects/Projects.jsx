@@ -51,8 +51,8 @@ function Projects() {
 
     return (
         <div id='project-main'>
-            {projectInfo.map(project =>
-            <div>
+            {projectInfo.map((project, idx) =>
+            <div id='project' className={idx % 2 === 0 ? 'left' : 'right'}>
                 <div className='carousel' >
                     <h1 id='title'>{project.title}</h1>
                     <div>
@@ -64,11 +64,11 @@ function Projects() {
                             )}
                         </Carousel>
                     </div>
-                    <Paper elevation={3} className='paper-desc'>
+                    <Paper elevation={4} className='paper-desc'>
                     <p>{project.desc}</p>
                     </Paper>
                 </div>
-                <Paper elevation={3} className='paper-logos'>
+                <Paper elevation={4} className='paper-logos'>
                     { project.logos.map(logo =>
                         <div className='logos'>
                             <img src={logo} className='logo'></img>

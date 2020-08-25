@@ -1,13 +1,16 @@
 #project {
     clip-path: polygon(0 0%, 100% 6%, 100% 94%, 0% 100%);
+    /* background-color: blue; */
+    margin-bottom: 30px;
+    padding-bottom: 100px;
 }
 
 .left {
-    transform: rotate(2deg);
+   background-color: lightgray;
 }
 
 .right {
-    transform: rotate(-2deg)
+   background-color: white;
 }
 
 div.carousel {
@@ -31,21 +34,21 @@ img.logo {
 #title {
     margin-bottom: 7px;
     margin-top: 7px;
+    padding-top: 70px;
 }
 
 #project-main {
-    background-color: grey;
+    /* background-color: grey; */
 }
 
 .paper-logos {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* width: 140vmin; */
     width: 75%;
     text-align: center;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .paper-desc {
