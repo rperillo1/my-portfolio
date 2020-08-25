@@ -2,6 +2,7 @@ import React from 'react';
 import './Projects.css'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+import Paper from '@material-ui/core/Paper';
 
 
 
@@ -49,7 +50,7 @@ const projectInfo = [
 function Projects() {
 
     return (
-        <>
+        <div id='project-main'>
             {projectInfo.map(project =>
             <div>
                 <div className='carousel' >
@@ -63,18 +64,20 @@ function Projects() {
                             )}
                         </Carousel>
                     </div>
+                    <Paper elevation={3} className='paper-desc'>
                     <p>{project.desc}</p>
+                    </Paper>
                 </div>
-                <div className='flex-container'>
+                <Paper elevation={3} className='paper-logos'>
                     { project.logos.map(logo =>
                         <div className='logos'>
                             <img src={logo} className='logo'></img>
                         </div>
                     )}
-                </div>    
+                </Paper>    
             </div>
             )}
-        </>
+        </div>
     )
 }
 

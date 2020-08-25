@@ -21,19 +21,33 @@ button.control-arrow {
     color: orange;
 }
 
-div.logos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 10vmin;
-}
 
 img.logo {
     width: 20vmin;
     padding: 2vmin;
+    border-radius: 18px;
 }
 
 #title {
     margin-bottom: 7px;
     margin-top: 7px;
+}
+
+#project-main {
+    background-color: grey;
+}
+
+.paper-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 140vmin; */
+    width: 75%;
+    text-align: center;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.paper-desc {
+    padding: 20px;
 }
