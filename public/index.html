@@ -28,7 +28,7 @@
     -->
     <title>Robert Perillo</title>
   </head>
-  <body>
+  <body onload="wakeUpHeroku()">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -43,3 +43,14 @@
     -->
   </body>
 </html>
+
+<script>
+  function wakeUpHeroku() {
+    fetch('https://dandd-character-manager.herokuapp.com/', {mode: 'no-cors'});
+    fetch('https://job-search-trackr.herokuapp.com/', {mode: 'no-cors'});
+    fetch('https://game-time-scheduler.herokuapp.com/home', {mode: 'no-cors'});
+    fetch('https://the-goodest-doggo.herokuapp.com/home', {mode: 'no-cors'});
+    fetch('https://rperillo1.github.io/Slot-Machine/', {mode: 'no-cors'});
+    fetch('https://rperillo1.github.io/The-Field-of-Battle/', {mode: 'no-cors'});
+  }
+</script>
