@@ -27,8 +27,8 @@ function Navbar() {
                 {['Projects', 'Resume', 'About'].map((text, idx) => (
                     <Link exact to={`/${text}`} className='menu-links'>
                         <ListItem button key={text} className='menu-items'>
-                            <ListItemIcon>
-                                {idx === 0 ? <DvrIcon /> : ''}
+                            <ListItemIcon id='icons'>
+                                {idx === 0 ? <DvrIcon id='icons' /> : ''}
                                 {idx === 1 ? <AssignmentIcon /> : ''}
                                 {idx === 2 ? <AssignmentIndIcon /> : ''}
                             </ListItemIcon>

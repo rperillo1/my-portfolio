@@ -93,3 +93,8 @@ div.MuiListItemIcon-root {
     align-items: center;
     margin-left: -25vmin;
 }
+
+#icons:hover {
+    color: var(--text-color-2);
+
+}

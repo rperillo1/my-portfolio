@@ -59,8 +59,10 @@
     }
     #spotify {
         display: flex;
-        align-items: center;
-        width: 80%;
+        justify-content: center;
+        margin: 20px auto;
+        margin-bottom: -40px;
+        width: 95vmin;
         height: 420px;
     }
     .spotify-text {
@@ -72,6 +74,17 @@
     }
     .title-font-4 {
         color: var(--text-color-3);
+    }
+    .tools img {
+        width: 100px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+    }
+    #protools, #audacity {
+        width: 60px;
+    }
+    #ableton {
+        width: 130px;
     }
 }
 
@@ -135,8 +148,10 @@
     }
     #spotify {
         display: flex;
-        align-items: center;
-        width: 55%;
+        justify-content: center;
+        margin: 20px auto;
+        margin-bottom: -40px;
+        width: 95vmin;
         height: 420px;
     }
     .spotify-text {
@@ -148,5 +163,16 @@
     }
     .title-font-4 {
         color: var(--text-color-3);
+    }
+    .tools img {
+        width: 100px;
+        margin-bottom: 40px;
+        border-radius: 10px;
+    }
+    #protools, #audacity {
+        width: 60px;
+    }
+    #ableton {
+        width: 130px;
     }
 }
