@@ -28,11 +28,11 @@ function Navbar() {
                     <Link exact to={`/${text}`} className='menu-links'>
                         <ListItem button key={text} className='menu-items'>
                             <ListItemIcon id='icons'>
-                                {idx === 0 ? <DvrIcon id='icons' /> : ''}
+                                {idx === 0 ? <DvrIcon /> : ''}
                                 {idx === 1 ? <AssignmentIcon /> : ''}
                                 {idx === 2 ? <AssignmentIndIcon /> : ''}
                             </ListItemIcon>
-                            <ListItemText primary={text} className='menu-item' />
+                            <ListItemText disableTypography primary={text} className='menu-item title-font-2' />
                         </ListItem>
                     </Link>
                 ))}

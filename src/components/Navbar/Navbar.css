@@ -96,5 +96,14 @@ div.MuiListItemIcon-root {
 
 #icons:hover {
     color: var(--text-color-2);
+}
 
+.menu-item {
+    font-size: 35px;
+    padding-left: 20px;
+    color: black;
+}
+
+.menu-item:hover{
+    color: var(--nav-color-2)
 }

@@ -17,7 +17,7 @@
     .mobile-text {
         margin: 2vmin;
     }
-    .title-font-2, .mobile-text {
+    .mobile-text {
         color: white;
     }
 }
@@ -58,7 +58,7 @@
     .mobile-text {
         display: none;
     }
-    .title-font-2, .desktop-text, .mobile-text {
+    .desktop-text, .mobile-text {
         color: white;
         letter-spacing: 1.5px;
     }

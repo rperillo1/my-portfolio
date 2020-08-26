@@ -84,8 +84,8 @@ function Projects() {
                         )}
                     </Paper> 
                     <div className='flex-container project-links'>
-                        <a href={project.appLink} className='project-link title-font-4'>Visit App</a>
-                        <a href={project.githubLink} className='project-link title-font-4'>Github Repo</a>
+                        <a href={project.appLink} target='_blank' className='project-link title-font-4'>Visit App</a>
+                        <a href={project.githubLink} target='_blank' className='project-link title-font-4'>Github Repo</a>
                     </div>
                 </div>
             )}
