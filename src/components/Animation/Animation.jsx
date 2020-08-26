@@ -20,7 +20,7 @@ function Animation() {
             >
                 <TweenOne
                     animation={animation}
-                    style={{ fill: 'magenta' }}
+                    style={{ fill: '#2c2c2cce' }}
                     component="path"
                     d="M60,50 a40,40 0 1,0 80,0a40,40 0 1,0 -80,0z"
                     attr="attr"

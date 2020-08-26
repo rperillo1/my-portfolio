@@ -62,28 +62,32 @@ function Projects() {
     return (
         <div id='project-main'>
             {projectInfo.map((project, idx) =>
-            <div className='project' id={idx % 2 === 0 ? 'left' : 'right'}>
-                <div className='carousel' >
-                    <h1 id='title' className='title-font-4'>{project.title}</h1>
-                    <div>
-                        <Carousel autoPlay={true} infiniteLoop showIndicators emulateTouch>
-                            {project.images.map(image =>
-                                <div>
-                                    <img src={image} />
-                                </div>
-                            )}
-                        </Carousel>
+                <div className='project' id={idx % 2 === 0 ? 'left' : 'right'}>
+                    <div className='carousel' >
+                        <h1 id='title' className='title-font-4'>{project.title}</h1>
+                        <div>
+                            <Carousel autoPlay={true} infiniteLoop showIndicators emulateTouch>
+                                {project.images.map(image =>
+                                    <div>
+                                        <img src={image} />
+                                    </div>
+                                )}
+                            </Carousel>
+                        </div>
+                        <Paper elevation={4} className='paper-desc text-font'>
+                            <p>{project.desc}</p>
+                        </Paper>
                     </div>
-                    <Paper elevation={4} className='paper-desc text-font'>
-                    <p>{project.desc}</p>
-                    </Paper>
-                </div>
-                <Paper elevation={4} className='paper-logos'>
-                    { project.logos.map(logo =>
+                    <Paper elevation={4} className='paper-logos'>
+                        {project.logos.map(logo =>
                             <img src={logo} className='logo'></img>
-                    )}
-                </Paper>    
-            </div>
+                        )}
+                    </Paper> 
+                    <div className='flex-container project-links'>
+                        <a href={project.appLink} className='project-link title-font-4'>Visit App</a>
+                        <a href={project.githubLink} className='project-link title-font-4'>Github Repo</a>
+                    </div>
+                </div>
             )}
         </div>
     )
