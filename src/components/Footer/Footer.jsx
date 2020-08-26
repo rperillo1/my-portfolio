@@ -11,11 +11,11 @@ function Footer() {
                 <div className='flex-container'>
                     <h1 className='title-font-2 desktop-text'>=></h1>
                     &nbsp;&nbsp;&nbsp;&nbsp;
-                    <Link className='title-font-2' to='/about'><h1 className='desktop-text'>About</h1></Link>
+                    <Link className='title-font-2' to='/about'><h1 className='desktop-text footer-link'>About</h1></Link>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <Link className='title-font-2' to='/resume'><h1 className='desktop-text'>Resume</h1></Link>
+                    <Link className='title-font-2' to='/resume'><h1 className='desktop-text footer-link'>Resume</h1></Link>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <Link className='title-font-2' to='/projects'><h1 className='desktop-text'>Projects</h1></Link>
+                    <Link className='title-font-2' to='/projects'><h1 className='desktop-text footer-link'>Projects</h1></Link>
                 </div>
             </div>
             <div id='footer-contact'>
@@ -24,10 +24,10 @@ function Footer() {
                 <div id='link-container'>
                     <h3 className='title-font-3 mobile-text'>Connect:</h3>
                     <a target="_blank" href="https://www.linkedin.com/in/robertperillo/">
-                    <LinkedInIcon className='mobile-text'/>
+                        <LinkedInIcon className='mobile-text footer-link' />
                     </a>
                     <a target="_blank" href="https://github.com/rperillo1">
-                    <GitHubIcon className='mobile-text'/>
+                        <GitHubIcon className='mobile-text footer-link' />
                     </a>
                 </div>
             </div>

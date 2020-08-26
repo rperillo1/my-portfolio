@@ -62,4 +62,9 @@
         color: white;
         letter-spacing: 1.5px;
     }
+    .footer-link:hover {
+        color: rgb(180, 180, 180);
+        transform: rotate(360deg);
+        transition: .3s all;
+    }
 }
