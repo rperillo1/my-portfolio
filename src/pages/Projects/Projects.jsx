@@ -9,7 +9,7 @@ import Paper from '@material-ui/core/Paper';
 const projectInfo = [
     {
         title: 'D&D Character Manager',
-        desc: 'Track your character stats, spells, abilities, money and more! Pulls spell data from the D&D 5e Players Handbook API',
+        desc: 'Track your character stats, spells, abilities, money and more! Pulls spell data from the D&D 5e Players Handbook API.',
         images: ['https://i.imgur.com/HhC4id5.png', 'https://i.imgur.com/UV8TLtf.png', 'https://i.imgur.com/ym0NygY.png', 'https://i.imgur.com/JMPTHyI.png'],
         logos: ['https://i.imgur.com/hWrPRuJ.png', 'https://i.imgur.com/DCsmNit.png', 'https://i.imgur.com/oyV9d35.png', 'https://i.imgur.com/MoLOBzA.png', 'https://i.imgur.com/u0fDtEb.png', 'https://i.imgur.com/p14Spbf.png', 'https://i.imgur.com/GMHSzcr.png'],
         appLink: 'https://dandd-character-manager.herokuapp.com/',
@@ -17,7 +17,7 @@ const projectInfo = [
     },
     {
         title: 'Job Search Tracker (JST)',
-        desc: 'Track job application notes, company information, interest levels and associated interviews. Uses GitHubs jobs API to pull relevant job info.',
+        desc: 'Track job applications with notes, company information, interest levels and associated interviews. Uses GitHubs jobs API to pull relevant job info.',
         images: ['https://i.imgur.com/dLMfXWT.png', 'https://i.imgur.com/ea0gWwf.png', 'https://i.imgur.com/ckx6qYS.png', 'https://i.imgur.com/XndUofw.png'],
         logos: ['https://i.imgur.com/a6uI0Vs.png', 'https://i.imgur.com/IGsHeNw.png', 'https://i.imgur.com/znLwmfG.png', 'https://i.imgur.com/6xfuexp.png', 'https://i.imgur.com/DCsmNit.png', 'https://i.imgur.com/UHCbPD3.png'],
         appLink: 'https://job-search-trackr.herokuapp.com/',
@@ -33,7 +33,7 @@ const projectInfo = [
     },
     {
         title: 'The Goodest Doggo',
-        desc: 'A virtual dog show app. Allows you to sign in via google OAuth, create a dog profile to add your dog to competitions for users to vote.',
+        desc: 'A virtual dog show app. Sign in via google OAuth, create your dogs profile, then add your dog to competitions for users to vote on.',
         images: ['https://i.imgur.com/DkOcPNV.jpg', 'https://i.imgur.com/OiRb12d.jpg', 'https://i.imgur.com/WLYctaG.jpg', 'https://i.imgur.com/KDsBMX6.png'],
         logos: ['https://i.imgur.com/DCsmNit.png', 'https://i.imgur.com/oyV9d35.png', 'https://i.imgur.com/MoLOBzA.png', 'https://i.imgur.com/u0fDtEb.png', 'https://i.imgur.com/p14Spbf.png', 'https://i.imgur.com/EnsYkPa.png'],
         appLink: 'https://the-goodest-doggo.herokuapp.com/home',
