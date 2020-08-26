@@ -1,12 +1,11 @@
 .project {
     clip-path: polygon(0 0%, 100% 6%, 100% 94%, 0% 100%);
-    /* background-color: blue; */
     margin-bottom: 10px;
 }
 
 #left {
     background-color: white;
-    padding-bottom: 65px;
+    padding-bottom: 60px;
 }
 
 #right {
@@ -37,7 +36,8 @@ img.logo {
 #title {
     margin-bottom: 7px;
     margin-top: 7px;
-    padding-top: 70px;
+    padding-top: 60px;
+    margin-bottom: 24px;
 }
 
 #project-main {
@@ -48,8 +48,6 @@ img.logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* width: 75%; */
-    /* max-width: 75%; */
     max-width: max-content;
     text-align: center;
     margin: auto;

@@ -35,7 +35,7 @@ const projectInfo = [
     },
     {
         title: 'Field of Battle',
-        desc: 'Single Player RPG. Create your character, choose a set of skills, go adventure and if you get through the forest and mountains and beat all the creatures before you lose all your life, YOU WIN! ',
+        desc: 'Single Player RPG. Create your character, choose a set of skills, and go adventure. If you get through the forest and mountains and beat all the creatures before you lose all your life - YOU WIN! ',
         images: ['https://i.imgur.com/ICISstu.png', 'https://i.imgur.com/GqnHcq6.png', 'https://i.imgur.com/oVv2kFq.png', 'https://i.imgur.com/Jnxg7OG.png', 'https://i.imgur.com/JM7Jjso.png', 'https://i.imgur.com/IutcTxe.png'],
         logos: ['https://i.imgur.com/DCsmNit.png', 'https://i.imgur.com/EnsYkPa.png']
     },
@@ -54,7 +54,7 @@ function Projects() {
             {projectInfo.map((project, idx) =>
             <div className='project' id={idx % 2 === 0 ? 'left' : 'right'}>
                 <div className='carousel' >
-                    <h1 id='title'>{project.title}</h1>
+                    <h1 id='title' className='title-font-4'>{project.title}</h1>
                     <div>
                         <Carousel autoPlay={true} infiniteLoop showIndicators emulateTouch>
                             {project.images.map(image =>
@@ -64,7 +64,7 @@ function Projects() {
                             )}
                         </Carousel>
                     </div>
-                    <Paper elevation={4} className='paper-desc'>
+                    <Paper elevation={4} className='paper-desc text-font'>
                     <p>{project.desc}</p>
                     </Paper>
                 </div>

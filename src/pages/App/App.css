@@ -16,12 +16,13 @@
 .text-font {
   font-family: 'Istok Web', sans-serif;
   font-weight: bolder;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 .title-font {
   font-family: 'Bungee Shade', cursive;
   font-size: 6vmin;
+  letter-spacing: 1.6px;
 }
 
 .title-font-2 {
