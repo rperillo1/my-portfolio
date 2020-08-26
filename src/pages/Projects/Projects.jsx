@@ -66,7 +66,7 @@ function Projects() {
                     <div className='carousel' >
                         <h1 id='title' className='title-font-4'>{project.title}</h1>
                         <div>
-                            <Carousel autoPlay={true} infiniteLoop showIndicators emulateTouch>
+                            <Carousel autoPlay={true} infiniteLoop showIndicators emulateTouch stopOnHover={false}>
                                 {project.images.map(image =>
                                     <div>
                                         <img src={image} />

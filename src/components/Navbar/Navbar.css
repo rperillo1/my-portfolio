@@ -50,12 +50,10 @@
 
 .open .menu-btn_burger::before {
     transform: rotate(45deg) translate(35px, -35px);
-    /* background: black; */
 }
 
 .open .menu-btn_burger::after {
     transform: rotate(-45deg) translate(35px, 35px);
-    /* background: black; */
 }
 
 .menu-items {
@@ -99,11 +97,38 @@ div.MuiListItemIcon-root {
 }
 
 .menu-item {
-    font-size: 35px;
-    padding-left: 20px;
+    font-size: 50px;
+    padding-left: 5px;
     color: black;
+    letter-spacing: 1px;
 }
 
 .menu-item:hover{
     color: var(--nav-color-2)
+}
+
+
+@media only screen and (min-width: 860px) {
+    .menu-btn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90px;
+        height: 80px;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+        margin-top: 20px;
+        margin-right: 10px;
+    }
+    div.MuiPaper-root.MuiDrawer-paper.MuiPaper-elevation16 {
+        width: 33%;
+    }
+
+    .menu-item {
+        font-size: 50px;
+        padding-left: 20px;
+        color: black;
+        letter-spacing: 1px;
+    }
 }

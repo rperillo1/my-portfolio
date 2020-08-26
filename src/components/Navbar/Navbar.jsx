@@ -15,7 +15,6 @@ import './Navbar.css'
 
 function Navbar() {
     const [drawer, toggleDrawer] = useToggle(false)
-    // const [isLoaded, toggleIsLoaded] = useState(true)
 
     const list = () => (
         <div
