@@ -7,7 +7,7 @@ function CheckWorkButton() {
         <div class="box">
         <Link to="/projects" className='title-font-4'> 
             <div class="btn btn-two">
-                <span id='btn-text'>Check My Work</span>
+                <span id='btn-text'>See My Work</span>
             </div>
         </Link>
         </div>

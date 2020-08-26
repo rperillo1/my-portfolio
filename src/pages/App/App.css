@@ -1,10 +1,11 @@
 :root {
-  --nav-color: #65c7f5f1;
-  --nav-color-1: rgb(235, 231, 231);
-  --text-color-1: #2c2929;
+  --nav-color: #2d5061f1;
+  --nav-color-1: #3a3f3d;
+  --text-color-1: white;
   --text-color-2: #b0faff;
-  --text-color-3: #353535ce;
+  --text-color-3: #2c2c2cce;
   --bg-color: rgba(255, 255, 255, 0.473);
+  --title-font-4: #626362;
 }
 
 #App {
