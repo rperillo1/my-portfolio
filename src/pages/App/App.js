@@ -35,6 +35,9 @@ function App() {
             </nav>
             <main className='main'>
               <Switch>
+                <Route exact path='/' render={({ history }) =>
+                  <About history={history} />
+                } />
                 <Route exact path='/projects' render={({ history }) =>
                   <Projects history={history} />
                 } />
@@ -44,7 +47,7 @@ function App() {
                 <Route exact path='/about' render={({ history }) =>
                   <About history={history} />
                 } />
-                <Route path='/' render={({ history }) =>
+                <Route render={({ history }) =>
                   <About history={history} />
                 } />
               </Switch>
