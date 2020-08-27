@@ -20,6 +20,11 @@
     .mobile-text {
         color: white;
     }
+    .footer-link:hover {
+        color: rgb(180, 180, 180);
+        transform: rotate(350deg);
+        transition: .3s all;
+    }
 }
 
 @media only screen and (min-width: 700px) {

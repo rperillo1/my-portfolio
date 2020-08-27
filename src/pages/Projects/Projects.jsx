@@ -69,7 +69,7 @@ function Projects() {
                             <Carousel autoPlay={true} infiniteLoop showIndicators emulateTouch stopOnHover={false}>
                                 {project.images.map(image =>
                                     <div>
-                                        <img src={image} />
+                                        <img src={image} alt={`project ${idx} ${project.title}`} />
                                     </div>
                                 )}
                             </Carousel>
@@ -80,12 +80,12 @@ function Projects() {
                     </div>
                     <Paper elevation={4} className='paper-logos'>
                         {project.logos.map(logo =>
-                            <img src={logo} className='logo'></img>
+                            <img src={logo} className='logo' alt={`technology used logo`}></img>
                         )}
                     </Paper> 
                     <div className='flex-container project-links'>
-                        <a href={project.appLink} target='_blank' className='project-link title-font-4'>Visit App</a>
-                        <a href={project.githubLink} target='_blank' className='project-link title-font-4'>Github Repo</a>
+                        <a href={project.appLink} target='_blank' rel="noopener noreferrer" className='project-link title-font-4'>Visit App</a>
+                        <a href={project.githubLink} target='_blank' rel="noopener noreferrer" className='project-link title-font-4'>Github Repo</a>
                     </div>
                 </div>
             )}
