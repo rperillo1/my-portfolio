@@ -44,6 +44,9 @@ function App() {
                 <Route exact path='/about' render={({ history }) =>
                   <About history={history} />
                 } />
+                <Route path='/' render={({ history }) =>
+                  <About history={history} />
+                } />
               </Switch>
             </main>
             <footer className='footer'>
