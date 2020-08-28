@@ -1,4 +1,4 @@
-@media only screen and (max-width: 699px) {
+@media only screen and (max-width: 720px) {
     .desktop-text {
         display: none;
     }
@@ -25,9 +25,18 @@
         transform: rotate(350deg);
         transition: .3s all;
     }
+    #mobile-link {
+        display: flex;
+    }
+    .footer-link {
+        display: none;
+    }
+    #mobile-link {
+        color: white;
+    }
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 720px) {
     #footer-links {
         float: left;
         margin-top: 20px;
@@ -71,5 +80,11 @@
         color: rgb(180, 180, 180);
         transform: rotate(350deg);
         transition: .3s all;
+    }
+    #email-link {
+        color: white;
+    }
+    #mobile-link {
+        display: none;
     }
 }

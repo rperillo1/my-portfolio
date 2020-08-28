@@ -65,6 +65,9 @@ function Projects() {
                 <div className='project' id={idx % 2 === 0 ? 'left' : 'right'}>
                     <div className='carousel' >
                         <h1 id='title' className='title-font-4'>{project.title}</h1>
+                        <Paper elevation={4} className='paper-desc text-font'>
+                            <p>{project.desc}</p>
+                        </Paper>
                         <div>
                             <Carousel autoPlay={true} infiniteLoop showIndicators emulateTouch stopOnHover={false}>
                                 {project.images.map(image =>
@@ -74,9 +77,6 @@ function Projects() {
                                 )}
                             </Carousel>
                         </div>
-                        <Paper elevation={4} className='paper-desc text-font'>
-                            <p>{project.desc}</p>
-                        </Paper>
                     </div>
                     <Paper elevation={4} className='paper-logos'>
                         {project.logos.map(logo =>

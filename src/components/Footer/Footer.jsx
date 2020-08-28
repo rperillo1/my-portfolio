@@ -20,7 +20,7 @@ function Footer() {
             </div>
             <div id='footer-contact'>
                 <h3 className='title-font-3 desktop-text'>Connect With Me :</h3>
-                <h2 className='title-font-2 desktop-text'>perillo.robert@gmail.com</h2>
+                <a href='mailto:perillo.robert@gmail.com' id='email-link'><h2 className='title-font-2 desktop-text'>perillo.robert@gmail.com</h2></a>
                 <div id='link-container'>
                     <h3 className='title-font-3 mobile-text'>Connect:</h3>
                     <a target="_blank" href="https://www.linkedin.com/in/robertperillo/" rel="noopener noreferrer">
@@ -29,6 +29,7 @@ function Footer() {
                     <a target="_blank" href="https://github.com/rperillo1" rel="noopener noreferrer">
                         <GitHubIcon className='mobile-text footer-link' />
                     </a>
+                    <a href='mailto:perillo.robert@gmail.com' id='mobile-link'><h2 className='title-font-2'>Send Email</h2></a>
                 </div>
             </div>
         </div>
