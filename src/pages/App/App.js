@@ -8,7 +8,7 @@ import useToggle from '../../hooks/useToggle'
 import Animation from '../../components/Animation/Animation'
 import Projects from '../Projects/Projects'
 import Resume from '../Resume/Resume'
-import About from '../About/About'
+import HomePage from '../About/About'
 import './App.css';
 TweenOne.plugins.push(SvgMorphPlugin);
 
@@ -36,7 +36,7 @@ function App() {
             <main className='main'>
               <Switch>
                 <Route exact path='/' render={({ history }) =>
-                  <About history={history} />
+                  <HomePage history={history} />
                 } />
                 <Route exact path='/projects' render={({ history }) =>
                   <Projects history={history} />
@@ -44,11 +44,8 @@ function App() {
                 <Route exact path='/resume' render={({ history }) =>
                   <Resume history={history} />
                 } />
-                <Route exact path='/about' render={({ history }) =>
-                  <About history={history} />
-                } />
                 <Route render={({ history }) =>
-                  <About history={history} />
+                  <HomePage history={history} />
                 } />
               </Switch>
             </main>

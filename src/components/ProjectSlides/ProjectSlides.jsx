@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import './ProjectSlides.css'
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import MobileStepper from '@material-ui/core/MobileStepper';
@@ -7,6 +7,7 @@ import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
+import useToggle from '../../hooks/useToggle'
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -71,6 +72,7 @@ function ProjectSlides() {
     const theme = useTheme();
     const [activeStep, setActiveStep] = useState(0);
     const maxSteps = projectImages.length;
+    const [autoplay, toggleAutoplay] = useToggle(false)
 
     const handleNext = () => {
         setActiveStep((prevActiveStep) => prevActiveStep + 1);
@@ -84,6 +86,13 @@ function ProjectSlides() {
         setActiveStep(step);
     };
 
+    useEffect(() => {
+        const loading = setTimeout(function () {
+            toggleAutoplay();
+        }, 7000);
+        return () => clearTimeout(loading)
+      }, [])
+
     return (
         <div className='flex-container'>
             <div className={classes.root}>
@@ -92,6 +101,8 @@ function ProjectSlides() {
                     index={activeStep}
                     onChangeIndex={handleStepChange}
                     enableMouseEvents
+                    interval={4800}
+                    autoplay={autoplay}
                 >
                     {projectImages.map((step, index) => (
                         <div key={index}>

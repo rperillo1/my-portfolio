@@ -23,13 +23,13 @@ function Navbar() {
             onKeyDown={() => toggleDrawer(false)}
         >
             <List>
-                {['Projects', 'Resume', 'About'].map((text, idx) => (
+                {['Home', 'Projects', 'Resume'].map((text, idx) => (
                     <Link exact to={`/${text}`} className='menu-links' key={idx}>
                         <ListItem button key={text} className='menu-items'>
                             <ListItemIcon id='icons'>
-                                {idx === 0 ? <DvrIcon /> : ''}
-                                {idx === 1 ? <AssignmentIcon /> : ''}
-                                {idx === 2 ? <AssignmentIndIcon /> : ''}
+                                {idx === 0 ? <AssignmentIndIcon /> : ''}
+                                {idx === 1 ? <DvrIcon /> : ''}
+                                {idx === 2 ? <AssignmentIcon /> : ''}
                             </ListItemIcon>
                             <ListItemText disableTypography primary={text} className='menu-item title-font-2' />
                         </ListItem>

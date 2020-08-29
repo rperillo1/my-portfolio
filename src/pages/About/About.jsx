@@ -2,7 +2,7 @@ import React from 'react';
 import AboutComponents from '../../components/AboutComponents/AboutComponents'
 
 
-function Profile() {
+function HomePage() {
     return (
         <>
         <main id='profile-main'>
@@ -12,4 +12,4 @@ function Profile() {
     )
 }
 
-export default Profile;
+export default HomePage;

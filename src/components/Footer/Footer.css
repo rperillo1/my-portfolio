@@ -83,6 +83,7 @@
     }
     #email-link {
         color: white;
+        font-size: 12.5px;
     }
     #mobile-link {
         display: none;

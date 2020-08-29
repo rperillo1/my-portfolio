@@ -10,11 +10,11 @@ function Footer() {
             <div id='footer-links'>
                 <div className='flex-container'>
                     <h1 className='title-font-2 desktop-text'>=></h1>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    <Link className='title-font-2' to='/about'><h1 className='desktop-text footer-link'>About</h1></Link>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;
+                    <Link className='title-font-2' to='/'><h1 className='desktop-text footer-link'>About</h1></Link>
+                    &nbsp;&nbsp;&nbsp;
                     <Link className='title-font-2' to='/resume'><h1 className='desktop-text footer-link'>Resume</h1></Link>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;
                     <Link className='title-font-2' to='/projects'><h1 className='desktop-text footer-link'>Projects</h1></Link>
                 </div>
             </div>
