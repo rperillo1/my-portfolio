@@ -18,7 +18,7 @@ export default function ProfileCard() {
     <>
       <div className='flex-container'>
         <Paper elevation={3} className={classes.root}>
-          <img src="https://i.imgur.com/Ptk7n58.png" alt="" className='profile-img' />
+          <img src='/profile-img.png' alt="" className='profile-img' />
         </Paper>
       </div>
           &nbsp;&nbsp;&nbsp;&nbsp;

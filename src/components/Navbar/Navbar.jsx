@@ -42,9 +42,7 @@ function Navbar() {
     return (
         <div>
             <div className='flex-container nav-name'>
-                {/* <Slide direction="top" in={true} mountOnEnter unmountOnExit timeout={300}> */}
                     <h1 className='title-font'>Robert</h1>
-                {/* </Slide> */}
                 &nbsp;&nbsp;&nbsp;
                 <Slide direction="left" in={true} mountOnEnter unmountOnExit timeout={800}>
                     <h1 className='title-font'>Perillo</h1>
@@ -56,7 +54,7 @@ function Navbar() {
                     className={`menu-btn_burger ${drawer ? 'open' : ''} `}>
                 </div>
             </div>
-            <Drawer anchor={'menu'} open={drawer} onClose={() => toggleDrawer(false)} className='drawer'>
+            <Drawer anchor={'left'} open={drawer} onClose={() => toggleDrawer(false)} className='drawer'>
                 {list('menu')}
             </Drawer>
         </div>
