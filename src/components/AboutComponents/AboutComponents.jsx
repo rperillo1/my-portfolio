@@ -23,10 +23,11 @@ export default function AboutComponents() {
           <ProfileCard />
         </div>
         <div id='middle-2'>
-          <h2 className='flex-container title-font-4'>Sample Work:</h2>
-          <ProjectSlides />
           <h2 className='flex-container title-font-4'>Technologies:</h2>
           <Logos />
+          <br />
+          <br />
+          <ProjectSlides />
         </div>
         <div id='bottom'>
           <div className='flex-container'>
