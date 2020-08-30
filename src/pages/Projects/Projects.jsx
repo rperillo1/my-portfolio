@@ -24,7 +24,7 @@ const projectInfo = [
         githubLink: 'https://github.com/rperillo1/Job-Search-Tracker'
     },
     {
-        title: 'Gaming Time - a scheduling app',
+        title: 'Game Time - a scheduling app',
         desc: 'Sign up via google OAuth. Create friend groups and games within those groups. Then create polls of dates for your group members to vote on! Uses the Google Calendar API so that you can post an event date that was chosen by your friends.',
         images: ['https://i.imgur.com/MOgIOuX.png', 'https://i.imgur.com/mXwEbla.png', 'https://i.imgur.com/2Df5gPe.png', 'https://i.imgur.com/cESnvUk.png'],
         logos: ['https://i.imgur.com/DCsmNit.png', 'https://i.imgur.com/oyV9d35.png', 'https://i.imgur.com/MoLOBzA.png', 'https://i.imgur.com/u0fDtEb.png', 'https://i.imgur.com/p14Spbf.png', 'https://i.imgur.com/aajFadH.png'],
