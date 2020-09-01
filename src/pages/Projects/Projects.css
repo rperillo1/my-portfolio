@@ -78,6 +78,10 @@ img.logo {
     margin-top: 20px;
 }
 
+#compressed-img {
+    height: 100%;
+}
+
 
 @media only screen and (min-width: 700px) {
     div.carousel {
@@ -100,5 +104,5 @@ img.logo {
         text-align: center;
         margin-top: 30px;
     }
-    
+
 }

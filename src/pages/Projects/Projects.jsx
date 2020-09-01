@@ -3,6 +3,7 @@ import './Projects.css'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import Paper from '@material-ui/core/Paper';
+import { v4 as uuidv4 } from 'uuid';
 
 
 
@@ -14,7 +15,8 @@ const projectInfo = [
         compressedImgs: ['D&D-1.png', 'D&D-2.png', 'D&D-3.png', 'D&D-4.png'],
         logos: ['https://i.imgur.com/hWrPRuJ.png', 'https://i.imgur.com/DCsmNit.png', 'https://i.imgur.com/oyV9d35.png', 'https://i.imgur.com/MoLOBzA.png', 'https://i.imgur.com/u0fDtEb.png', 'https://i.imgur.com/p14Spbf.png', 'https://i.imgur.com/GMHSzcr.png'],
         appLink: 'https://dandd-character-manager.herokuapp.com/',
-        githubLink: 'https://github.com/rperillo1/DandD-character-manager'
+        githubLink: 'https://github.com/rperillo1/DandD-character-manager',
+        id: uuidv4()
     },
     {
         title: 'Job Search Tracker (JST)',
@@ -23,7 +25,8 @@ const projectInfo = [
         compressedImgs: ['jst-1.png', 'jst-2.png', 'jst-3.png', 'jst-4.png'],
         logos: ['https://i.imgur.com/a6uI0Vs.png', 'https://i.imgur.com/IGsHeNw.png', 'https://i.imgur.com/znLwmfG.png', 'https://i.imgur.com/6xfuexp.png', 'https://i.imgur.com/DCsmNit.png', 'https://i.imgur.com/UHCbPD3.png'],
         appLink: 'https://job-search-trackr.herokuapp.com/',
-        githubLink: 'https://github.com/rperillo1/Job-Search-Tracker'
+        githubLink: 'https://github.com/rperillo1/Job-Search-Tracker',
+        id: uuidv4()
     },
     {
         title: 'Game Time - a scheduling app',
@@ -32,7 +35,8 @@ const projectInfo = [
         compressedImgs: ['game-time-1.png', 'game-time-2.png', 'game-time-3.png', 'game-time-4.png'],
         logos: ['https://i.imgur.com/DCsmNit.png', 'https://i.imgur.com/oyV9d35.png', 'https://i.imgur.com/MoLOBzA.png', 'https://i.imgur.com/u0fDtEb.png', 'https://i.imgur.com/p14Spbf.png', 'https://i.imgur.com/aajFadH.png'],
         appLink: 'https://game-time-scheduler.herokuapp.com/home',
-        githubLink: 'https://github.com/rperillo1/Gaming-Scheduler'
+        githubLink: 'https://github.com/rperillo1/Gaming-Scheduler',
+        id: uuidv4()
     },
     {
         title: 'The Goodest Doggo',
@@ -41,7 +45,8 @@ const projectInfo = [
         compressedImgs: ['doggo-1.png', 'doggo-2.png', 'doggo-3.png', 'doggo-4.png'],
         logos: ['https://i.imgur.com/DCsmNit.png', 'https://i.imgur.com/oyV9d35.png', 'https://i.imgur.com/MoLOBzA.png', 'https://i.imgur.com/u0fDtEb.png', 'https://i.imgur.com/p14Spbf.png', 'https://i.imgur.com/EnsYkPa.png'],
         appLink: 'https://the-goodest-doggo.herokuapp.com/home',
-        githubLink: 'https://github.com/rperillo1/The-Goodest-Doggo'
+        githubLink: 'https://github.com/rperillo1/The-Goodest-Doggo',
+        id: uuidv4()
     },
     {
         title: 'Field of Battle',
@@ -50,7 +55,8 @@ const projectInfo = [
         compressedImgs: ['battle-1.png', 'battle-2.png', 'battle-3.png', 'battle-4.png', 'battle-5.png', 'battle-6.png'],
         logos: ['https://i.imgur.com/DCsmNit.png', 'https://i.imgur.com/EnsYkPa.png'],
         appLink: 'https://rperillo1.github.io/The-Field-of-Battle/',
-        githubLink: 'https://github.com/rperillo1/The-Field-of-Battle'
+        githubLink: 'https://github.com/rperillo1/The-Field-of-Battle',
+        id: uuidv4()
     },
     {
         title: 'Neon Jungle Slots',
@@ -59,7 +65,8 @@ const projectInfo = [
         compressedImgs: ['slots.png'],
         logos: ['https://i.imgur.com/DCsmNit.png', 'https://i.imgur.com/EnsYkPa.png'],
         appLink: 'https://rperillo1.github.io/Slot-Machine/',
-        githubLink: 'https://github.com/rperillo1/Slot-Machine'
+        githubLink: 'https://github.com/rperillo1/Slot-Machine',
+        id: uuidv4()
     },
 ]
 
@@ -68,7 +75,7 @@ function Projects() {
     return (
         <div id='project-main'>
             {projectInfo.map((project, idx) =>
-                <div className='project' id={idx % 2 === 0 ? 'left' : 'right'}>
+                <div className='project' id={idx % 2 === 0 ? 'left' : 'right'} key={project.id}>
                     <div className='carousel' >
                         <h1 id='title' className='title-font-4'>{project.title}</h1>
                         <Paper elevation={4} className='paper-desc text-font'>
@@ -77,16 +84,14 @@ function Projects() {
                         <div>
                             <Carousel autoPlay={true} infiniteLoop showIndicators emulateTouch stopOnHover={false}>
                                 {project.compressedImgs.map(image =>
-                                    <div>
-                                        <img src={`/project-imgs/${image}`} alt={`project ${idx} ${project.title}`} />
-                                    </div>
+                                        <img src={`/project-imgs/${image}`} alt={`project ${idx} ${project.title}`} key={project.id} id='compressed-img' />
                                 )}
                             </Carousel>
                         </div>
                     </div>
                     <Paper elevation={4} className='paper-logos'>
-                        {project.logos.map(logo =>
-                            <img src={logo} className='logo' alt={`technology used logo`}></img>
+                        {project.logos.map((logo, idx) =>
+                            <img src={logo} className='logo' alt={`technology used logo`} key={`${project.id}/${idx}`+100}></img>
                         )}
                     </Paper> 
                     <div className='flex-container project-links'>
