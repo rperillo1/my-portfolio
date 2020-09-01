@@ -19,7 +19,7 @@ function SpotifyCard() {
             toggleIsLoaded();
         }, 3000);
         return () => clearTimeout(loading)
-    }, [isLoaded])
+    }, [])
 
     
     return (

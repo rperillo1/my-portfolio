@@ -9,3 +9,15 @@
 div.MuiMobileStepper-root {
     background-color: rgba(182, 182, 182, 0.438);
 }
+
+#laptop-img {
+    width: 40%;
+}
+
+#mobile-img {
+    width: 8%;
+}
+
+.slider-container {
+    background-color: white;
+}
