@@ -76,9 +76,9 @@ function Projects() {
                         </Paper>
                         <div>
                             <Carousel autoPlay={true} infiniteLoop showIndicators emulateTouch stopOnHover={false}>
-                                {project.images.map(image =>
+                                {project.compressedImgs.map(image =>
                                     <div>
-                                        <img src={image} alt={`project ${idx} ${project.title}`} />
+                                        <img src={`/project-imgs/${image}`} alt={`project ${idx} ${project.title}`} />
                                     </div>
                                 )}
                             </Carousel>
