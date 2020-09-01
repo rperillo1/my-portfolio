@@ -11,7 +11,7 @@ div.MuiMobileStepper-root {
 }
 
 #laptop-img {
-    width: 40%;
+    width: 60%;
 }
 
 #mobile-img {
@@ -20,4 +20,11 @@ div.MuiMobileStepper-root {
 
 .slider-container {
     background-color: white;
+}
+
+@media only screen and (min-width: 768px) {
+    #laptop-img {
+        width: 40%;
+    }
+
 }
