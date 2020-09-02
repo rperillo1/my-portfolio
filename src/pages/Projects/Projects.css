@@ -20,15 +20,16 @@ div.carousel {
     margin: auto;
 }
 
-.control-arrow.control-prev::before, button.control-arrow.control-next::before  {
+.control-arrow.control-prev::before, button.control-arrow.control-next::before {
     width: 10px;
     border-top: 8px solid white;
     border-bottom: 10px solid white;
 }
 
-img.logo {
-    width: 20vw;
-    padding: .7vw;
+.paper-logos img {
+    width: 18vmin;
+    height: 10%;
+    padding: 1vmin;
     border-radius: 8px;
     margin: auto;
 }
@@ -40,14 +41,10 @@ img.logo {
     font-size: 1.4rem;
 }
 
-/* #project-main {
-
-} */
-
 .paper-logos {
     display: flex;
     flex-wrap: wrap;
-    /* max-width: max-content; */
+    max-width: max-content;
     text-align: center;
     margin: auto 15px;
     margin-top: 30px;
@@ -83,6 +80,26 @@ img.logo {
 }
 
 
+_::-webkit-full-page-media, _:future, :root .paper-logos {
+    height: 18vmin;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: max-content;
+    text-align: center;
+    margin: auto 20px;
+    margin-top: 40px;
+}
+
+_::-webkit-full-page-media, _:future, :root .margin-in {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+_::-webkit-full-page-media, _:future, :root .logo {
+    height: 8vmin;
+}
+
+
 @media only screen and (min-width: 700px) {
     div.carousel {
         width: 60vw;
@@ -104,5 +121,4 @@ img.logo {
         text-align: center;
         margin-top: 30px;
     }
-
 }

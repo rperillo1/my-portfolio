@@ -101,9 +101,11 @@ function Projects() {
                             </Carousel>
                         </div>
                     </div>
-                    <Paper elevation={4} className='paper-logos'>
+                    <Paper elevation={4} className={`paper-logos ${ idx < 4 ? ' margin-in' : '' } `}>
                         {project.logos.map((logo, idx) =>
-                            <img src={`/logos/${logo}`} className='logo' alt={`technology used logo`} key={`${project.id}/${idx}`+100}></img>
+                            <img src={`/logos/${logo}`} 
+                            className='logo'
+                            alt={`technology used logo`} key={`${project.id}/${idx}`+100}></img>
                         )}
                     </Paper> 
                     <div className='flex-container project-links'>

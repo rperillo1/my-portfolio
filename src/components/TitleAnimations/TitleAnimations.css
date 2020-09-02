@@ -69,13 +69,16 @@
 
 #my-titles #title-header-1 {
     font-size: 28px;
+    padding: 0px;
 }
 
 @media only screen and (min-width: 768px) {
     #title-header-2, #title-header-3 {
         display: flex;
+        padding: 0px 12px;
     }
     #my-titles #title-header-1 {
         font-size: 28px;
+        padding: 0px;
     }
 }
