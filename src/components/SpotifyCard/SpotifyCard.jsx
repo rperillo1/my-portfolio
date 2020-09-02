@@ -17,7 +17,7 @@ function SpotifyCard() {
     useEffect(() => {
         const loading = setTimeout(function () {
             toggleIsLoaded();
-        }, 3000);
+        }, 3500);
         return () => clearTimeout(loading)
     }, [])
 
