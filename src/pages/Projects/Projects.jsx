@@ -82,7 +82,7 @@ function Projects() {
                             <p>{project.desc}</p>
                         </Paper>
                         <div>
-                            <Carousel autoPlay={true} infiniteLoop showIndicators emulateTouch stopOnHover={false}>
+                            <Carousel autoPlay={true} infiniteLoop showIndicators emulateTouch stopOnHover={false} showThumbs={false}>
                                 {project.compressedImgs.map(image =>
                                         <img src={`/project-imgs/${image}`} alt={`project ${idx} ${project.title}`} key={project.id} id='compressed-img' />
                                 )}

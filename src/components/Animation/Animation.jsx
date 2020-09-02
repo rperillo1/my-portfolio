@@ -1,7 +1,7 @@
 import React from 'react';
 import TweenOne from 'rc-tween-one';
 import SvgMorphPlugin from 'rc-tween-one/lib/plugin/SvgMorphPlugin';
-TweenOne.plugins.push(SvgMorphPlugin);
+// TweenOne.plugins.push(SvgMorphPlugin);
 
 
 function Animation() {
@@ -15,7 +15,7 @@ function Animation() {
 
     return (
         <div style={{ textAlign: 'center', marginTop: 40 }}>
-            <svg width="200" height="130" version="1.2"
+            {/* <svg width="200" height="130" version="1.2"
                 style={{ display: 'block', margin: 'auto' }}
             >
                 <TweenOne
@@ -25,7 +25,7 @@ function Animation() {
                     d="M60,50 a40,40 0 1,0 80,0a40,40 0 1,0 -80,0z"
                     attr="attr"
                 />
-            </svg>
+            </svg> */}
         </div>
     )
 }

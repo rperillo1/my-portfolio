@@ -35,6 +35,7 @@
 
 .profile-text {
     padding: 10px;
+    margin: 0 30px;
 }
 
 #snowboard-img {
@@ -111,6 +112,7 @@ iframe.SpotifyPlayer {
     }
     .profile-text {
         padding: 15px;
+        margin: 0px;
     }
     #snowboard-img {
         border-radius: 20px;
