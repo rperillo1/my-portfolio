@@ -26,19 +26,19 @@ const projectImages = [
         id: uuidv4()
     },
     {
-        laptopImg: 'https://i.imgur.com/1Noyanj.png',
-        mobileImg: 'https://i.imgur.com/YOTeiCy.png',
+        laptopImg: 'https://i.imgur.com/L5moBoK.png',
+        mobileImg: 'https://i.imgur.com/0vBpbbR.png',
         desc: 'Mobile responsive slot machine made with vanilla JavaScript, HTML & CSS',
         id: uuidv4()
     },
     {
-        laptopImg: 'https://i.imgur.com/HrcV3nI.png',
+        laptopImg: 'https://i.imgur.com/6aeO84C.png',
         mobileImg: null,
         desc: 'A virtual dog show app. Allows you to sign in via google OAuth, create a dog profile yout dog to competitions for people to vote. Technologies: Express, Node, EJS templates, Javascript, Mongoose, MongoDB, HTML, CSS ',
         id: uuidv4()
     },
     {
-        laptopImg: 'https://i.imgur.com/RpK5zxW.png',
+        laptopImg: 'https://i.imgur.com/v7NiOvk.png',
         mobileImg: null,
         desc: 'Single Player RPG made with vanilla JavaScript, HTML, CSS (Grid, FLexbox, Bootstrap)',
         id: uuidv4()

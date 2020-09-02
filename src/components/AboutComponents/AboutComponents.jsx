@@ -25,9 +25,9 @@ export default function AboutComponents() {
         <div id='middle-2'>
           <h2 className='flex-container title-font-4'>Technologies:</h2>
           <Logos />
+          {/* <br />
           <br />
-          <br />
-          <ProjectSlides />
+          <ProjectSlides /> */}
         </div>
         <div id='bottom'>
           <div className='flex-container'>
