@@ -39,10 +39,10 @@ function SpotifyCard() {
             <div>
                 <h1 className='title-font-4 flex-container'>Tools:</h1>
                 <div className='flex-container tools'>
-                    <img src='https://i.imgur.com/r3fhAZE.png' alt='ableton logo' id='ableton'></img>
-                    <img src='https://i.imgur.com/b37z9xj.png' alt='protools logo' id='protools'></img>
-                    <img src='https://i.imgur.com/UVLqdxT.png' alt='audacity logo' id='audacity'></img>
-                    <img src='https://i.imgur.com/Z7awRul.png' alt='akai logo'></img>
+                    <img src='/logos/ableton.png' alt='ableton logo' id='ableton'></img>
+                    <img src='/logos/protools.png' alt='protools logo' id='protools'></img>
+                    <img src='/logos/audacity.png' alt='audacity logo' id='audacity'></img>
+                    <img src='/logos/akai.png' alt='akai logo'></img>
                 </div>
             </div>
         </>
