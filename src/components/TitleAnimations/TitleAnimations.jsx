@@ -1,27 +1,12 @@
 import React from 'react';
-import Grow from '@material-ui/core/Grow';
+import './TitleAnimations.css'
 
 function TitleAnimations() {
     return (
-        <div className='flex-container'>
-            <Grow
-                in={true}
-                timeout={2000}
-            >
-                <h1 className="flex-container title-font-4" id='title-header'>Full Stack Developer </h1>
-            </Grow>
-            <Grow
-                in={true}
-                timeout={3200}
-            >
-                <h1 className="flex-container title-font-4" id='title-header'>  &nbsp;&nbsp; Audio Engineer </h1>
-            </Grow>
-            <Grow
-                in={true}
-                timeout={4500}
-            >
-                <h1 className="flex-container title-font-4" id='title-header'>  &nbsp;&nbsp; Outdoor Enthusiast</h1>
-            </Grow>
+        <div className='flex-container' id='my-titles'>
+                <h1 className="flex-container title-font-4" id='title-header-1'>Full Stack Developer </h1>
+                <h1 className="flex-container title-font-4" id='title-header-2'>  &nbsp;&nbsp; Audio Engineer </h1>
+                <h1 className="flex-container title-font-4" id='title-header-3'>  &nbsp;&nbsp; Outdoor Enthusiast</h1>
         </div>
     )
 }
