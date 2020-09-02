@@ -18,10 +18,19 @@ function App() {
 
 
   useEffect(() => {
-    const loading = setTimeout(function () {
-      toggleIsLoaded();
-    }, 1500);
-    return () => clearTimeout(loading)
+    try {
+      window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth',
+      });
+      const loading = setTimeout(function () {
+        toggleIsLoaded();
+      }, 1500);
+      return () => clearTimeout(loading)
+    } catch (error) {
+      window.scrollTo(0, 0);
+    }
   }, [])
 
 

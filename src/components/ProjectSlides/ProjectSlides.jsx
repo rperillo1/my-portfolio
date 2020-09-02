@@ -59,7 +59,7 @@ function ProjectSlides() {
 
     return (
         <div className='flex-container'>
-            <Carousel autoplay={true} infiniteLoop showIndicators emulateTouch stopOnHover={false} showThumbs={false}>
+            <Carousel autoplay={autoplay} infiniteLoop showIndicators emulateTouch stopOnHover={false} showThumbs={false}>
                 {projectImages.map((step, index) => (
                     <div className="flex-container slider-container" key={step.id}>
                         <img src={step.laptopImg} alt={`project ${index}`} id='laptop-img'/>

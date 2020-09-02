@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Projects.css'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
@@ -71,6 +71,19 @@ const projectInfo = [
 ]
 
 function Projects() {
+
+    useEffect(() => {
+        try {
+          window.scroll({
+            top: 0,
+            left: 0,
+            behavior: 'smooth',
+          });
+        } catch (error) {
+          // just a fallback for older browsers
+          window.scrollTo(0, 0);
+        }
+      }, []);
 
     return (
         <div id='project-main'>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ResumePDF from './Robert-Perillo-Res.pdf'
 import LetterOfRec from './Letter-of-Rec.pdf'
 import { makeStyles } from '@material-ui/core/styles';
@@ -27,6 +27,18 @@ function Resume() {
     const handleChange = () => {
         setChecked((prev) => !prev);
     };
+
+    useEffect(() => {
+        try {
+          window.scroll({
+            top: 0,
+            left: 0,
+            behavior: 'smooth',
+          });
+        } catch (error) {
+          window.scrollTo(0, 0);
+        }
+      }, []);
 
 
     return (

@@ -9,9 +9,9 @@ import * as serviceWorker from './serviceWorker';
 ReactDOM.render(
   <Router>
     <React.StrictMode>
-      <ScrollToTop>
+      {/* <ScrollToTop> */}
       <Route render={({ history }) => <App history={history} />}/>
-      </ScrollToTop>
+      {/* </ScrollToTop> */}
     </React.StrictMode>
   </Router>,
   document.getElementById('root')
