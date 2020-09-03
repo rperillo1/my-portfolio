@@ -2,7 +2,6 @@ import React from 'react';
 import SpotifyCard from '../SpotifyCard/SpotifyCard'
 import ProfileCard from '../ProfileCard/ProfileCard'
 import TitleAnimations from '../TitleAnimations/TitleAnimations'
-import ProjectSlides from '../ProjectSlides/ProjectSlides'
 import CheckWorkButton from '../CheckWorkButton/CheckWorkButton'
 import Logos from '../Logos/Logos'
 

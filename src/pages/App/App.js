@@ -1,7 +1,5 @@
 import React, { useEffect } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import TweenOne from 'rc-tween-one';
-import SvgMorphPlugin from 'rc-tween-one/lib/plugin/SvgMorphPlugin';
 import Nav from '../../components/Nav/Nav'
 import Footer from '../../components/Footer/Footer'
 import useToggle from '../../hooks/useToggle'
@@ -10,7 +8,7 @@ import Projects from '../Projects/Projects'
 import Resume from '../Resume/Resume'
 import HomePage from '../About/About'
 import './App.css';
-TweenOne.plugins.push(SvgMorphPlugin);
+
 
 
 function App() {

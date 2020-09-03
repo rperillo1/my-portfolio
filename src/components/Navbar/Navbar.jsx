@@ -7,7 +7,6 @@ import ListItemText from '@material-ui/core/ListItemText';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
 import AssignmentIcon from '@material-ui/icons/Assignment';
-import Slide from '@material-ui/core/Slide';
 import DvrIcon from '@material-ui/icons/Dvr';
 import useToggle from '../../hooks/useToggle'
 import './Navbar.css'

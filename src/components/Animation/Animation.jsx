@@ -1,8 +1,5 @@
 import React from 'react';
-import TweenOne from 'rc-tween-one';
-import SvgMorphPlugin from 'rc-tween-one/lib/plugin/SvgMorphPlugin';
 import './Animation.css'
-// TweenOne.plugins.push(SvgMorphPlugin);
 
 
 function Animation() {
